@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;500;700;900&family=Saira:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700&display=swap');
 
 :root{
     --primary:black;
@@ -21,7 +21,7 @@ html{
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     overflow-x: hidden;
 }
 
@@ -93,7 +93,7 @@ a:hover {
 
 
 i{
-    color: var(--icon);
+    color: var(--colorText) !important;
 }
 
 .social-icon i{
@@ -158,14 +158,14 @@ input[type=submit]:hover {
     color: white !important;
     line-height: 30px;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 19px;
 }
 
 .nav-item .nav-link:hover{
     color: var(--colorText) !important;
     line-height: 30px;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 19px;
     transition: .3s all ease-in-out;
 }
 
@@ -195,12 +195,12 @@ input[type=submit]:hover {
     color: white;
     line-height: 30px;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 19px;
 }
 
 .dropbtn:hover{
     color: var(--colorText) !important;
-    font-size: 15px;
+    font-size: 19px;
     transition: .3s all ease-in-out;
 }
 
@@ -212,7 +212,7 @@ input[type=submit]:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #231f20;
     min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -233,9 +233,19 @@ input[type=submit]:hover {
 .dropdown:hover .dropdown-content {display: block;}
 
 .image-profile{
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
     border-radius: 50%;
+}
+
+.nameProfile{
+    color: #706d6b;
+    cursor: pointer;
+}
+
+.textMenu{
+    color: #a6a6a7 !important;
+    cursor: pointer;
 }
 
 .btn-login{
@@ -494,14 +504,21 @@ input[type=submit]:hover {
 }
 /* end slider */
 
+/* start double phones */
+.Phones{
+    width: 1000px;
+    height: 700px;
+    object-fit: contain;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+/* end double phones */
+
 /* start mini slider */
 .swiper2 {
-    /* width: 90%; */
-    margin: auto;
-    /* margin-top: 10px; */
-    /* margin-left: 40px; */
-    /* margin-right: 40px; */
     text-align: center;
+    margin-top: 420px;
 }
 
 .swiper2 .item {
@@ -558,6 +575,49 @@ input[type=submit]:hover {
 
 /* end mini slider */
 
+/* start testimonials */
+.sectionTestimonials{
+    border: 1px solid #dee2e6;
+    padding: 10px;
+}
+
+.sectionTestimonials:hover{
+    background-color: #00568d;
+    color: white;
+    transition: .3s all ease-in-out;
+}
+
+.clients{
+    font-weight: 800;
+    line-height: 48px;
+    size: 40px;
+    color: #0f172b;
+    text-transform: capitalize;
+}
+
+.iconSwiper{
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+
+.iconSwiper i{
+    color: white !important;
+    background-color: var(--colorText);
+    width: 30px;
+    height: 30px;
+    line-height: 10px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.clientName{
+    font-weight: bold;
+    font-size: 20px;
+}
+/* end testimonials */
+
 /* start footer */
 .footer{
     background-image: url("../images/top-head/top.png");
@@ -568,8 +628,7 @@ input[type=submit]:hover {
 .textFooter{
     font-weight: 600;
     line-height: 29px;
-    text-transform: uppercase !important;
-    size: 24px;
+    size: 20px;
     color: var(--colorText);
     text-transform: capitalize;
 }

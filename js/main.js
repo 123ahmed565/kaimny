@@ -43,3 +43,34 @@ var swiper = new Swiper(".mySwiper2", {
         },
     }
 });
+
+// swiper testimonials
+var swiper = new Swiper(".mySwiper3", {
+    slidesPerView: 4,
+    spaceBetween: 5,
+    freeMode: true,
+    autoplay:true,
+    loop:true,
+    navigation: {
+        nextEl: '.fa-chevron-right',
+        prevEl: '.fa-chevron-left',
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints:{
+        0: {
+            slidesPerView: 3.5,
+            spaceBetween: 10,
+        },
+        600: {
+            slidesPerView: 5.5,
+            spaceBetween: 20,
+        },
+        1000: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+    }
+});
