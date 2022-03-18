@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="icon" href="./images/logo/logo2.png" type="image/x-icon" />
+    <meta property="og:image" content="./images/logo/logo2.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style-rtl.css"> -->
+    <title>Kaimny | Home</title>
+</head>
+
+<body>
+
+
+    <!-- start header -->
+    <nav class="navbar navbar-expand-sm shadow-sm bg-white sticky-top">
+        <div class="container">
+            <i class="fas fa-bars  fa-2x mt-2 mr-3" data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
+            <a href="./index.html"> <img class="logo-navbar shadow-lg" src="" style="border-radius: 50%;" width="80"
+                    height="80" alt="image logo" loading="lazy"> </a>
+            <div class="offcanvas offcanvas-start" id="demo">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title"><a href="./index.html"> <img src="" width="80" height="80"
+                                alt="image menu" loading="lazy"></a></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body col justify-content-md-between">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about-us.html">About</a>
+                        </li>
+                        <div class="dropdown mt-2">
+                            <button class="dropbtn pe-2 ps-2">Categories</button>
+                            <div class="dropdown-content">
+                                <a href="./categories.html">Lands</a>
+                                <a href="./categories.html">Apartments</a>
+                                <a href="./categories.html">Villas</a>
+                            </div>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./our-works.html">Our Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact-us.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./our-clients.html">Our Clients</a>
+                        </li>
+                    </ul>
+
+                    <!-- start modal user -->
+                    <div class="icons">
+                        <button type="button" class="btn-login mt-3 mt-md-0" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                            <i class="fas fa-user"></i>
+                        </button>
+
+                        <!-- start dropdown profile -->
+                        <div class="dropdown for-mobile-none">
+                            <button class="dropbtn">
+                                <img src="https://elbarkaa.com/assets/website/images/elbaraka-logo%20white%20.png"
+                                    alt="" class="image-profile">
+                            </button>
+                            <div class="dropdown-content" style="top:30px;right:20px;min-width:170px">
+                                <img class="mx-auto d-block mt-2"
+                                    src="https://elbarkaa.com/assets/website/images/elbaraka-logo%20white%20.png"
+                                    width="80" height="80" alt="image profile" style="border-radius:50%;">
+                                <a href="./profile.html">
+                                    <i class="fas fa-user text-dark mt-3"> Profile</i>
+                                </a>
+                                <a>
+                                    <i class="fas fa-sign-out-alt text-dark mt-3">Log Out</i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- start search modal -->
+                        <a href="#search">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <div id="search-box">
+                            <div class="container">
+                                <a class="close" href="#close"></a>
+                                <div class="search-main">
+                                    <div class="search-inner">
+                                        <input type="text" id="inputSearch" name="firstname"
+                                            placeholder="Search Here...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--end header  -->
+
+    <!-- start slider -->
+    <div class="big-image" style="height: 570px;">
+        <div class="overlay">
+            <p class="text-center firstText text-capitalize">food app</p>
+            <h1 class="d-none d-sm-block bigText text-capitalize">Why stay hunger when you can order form bella onojie
+            </h1>
+            <p class="d-none d-sm-block smallText text-capitalize">download the bella onoje's food app now on</p>
+            <div class="d-flex">
+                <button class="text-capitalize button-apps shadow-lg">play store</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="text-capitalize button-apps shadow-lg">app store</button>
+            </div>
+        </div>
+    </div>
+    <!-- end slider -->
+
+    <!-- start mini slider -->
+    <div class="swiper2 mySwiper2 mt-4">
+        <div class="swiper-wrapper mt-2">
+            <div class="swiper-slide">
+                <div class="item">
+                    <div class="mini-slider-content">
+                        <img class="shadow-sm"
+                            src="https://olbac.com/olbac-website/public/storage/23/conversions/622a17a034132_photo-studio-1-thumb.jpg"
+                            loading="lazy" alt="PHOTOGRAPHY LIGHTING">
+                        <p class="ctg-name">PHOTOGRAPHY LIGHTING</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item">
+                    <div class="mini-slider-content">
+                        <img class="shadow-sm"
+                            src="https://olbac.com/olbac-website/public/storage/24/conversions/622a17bb04f3f_61bfa24cd38ec_111111-thumb-thumb.jpg"
+                            loading="lazy" alt="MICROPHONES">
+                        <p class="ctg-name">MICROPHONES</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item">
+                    <div class="mini-slider-content">
+                        <img class="shadow-sm"
+                            src="https://olbac.com/olbac-website/public/storage/25/conversions/622a18129ce2d_Fujifilm_X-T200_review_-1410x793-thumb.jpg"
+                            loading="lazy" alt="CAMERAS">
+                        <p class="ctg-name">CAMERAS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item">
+                    <div class="mini-slider-content">
+                        <img class="shadow-sm"
+                            src="https://olbac.com/olbac-website/public/storage/26/conversions/622a182aa1f95_Lens_Lineup-thumb.jpg"
+                            loading="lazy" alt="LENSES">
+                        <p class="ctg-name">LENSES</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item">
+                    <div class="mini-slider-content">
+                        <img class="shadow-sm"
+                            src="https://olbac.com/olbac-website/public/storage/28/conversions/622a183f3cae3_2019_11_04-A-flash_on_camera-thumb.jpg"
+                            loading="lazy" alt="FLASHES">
+                        <p class="ctg-name">FLASHES</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item">
+                    <div class="mini-slider-content">
+                        <img class="shadow-sm"
+                            src="https://olbac.com/olbac-website/public/storage/30/conversions/622a185309b1c_Edit_Lexar1066x-thumb.jpg"
+                            loading="lazy" alt="MEMORY CARDS">
+                        <p class="ctg-name">MEMORY CARDS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item">
+                    <div class="mini-slider-content">
+                        <img class="shadow-sm"
+                            src="https://olbac.com/olbac-website/public/storage/33/conversions/622a186e0f9ab_travel-tripods-group-folded-thumb.jpg"
+                            loading="lazy" alt="STANDS">
+                        <p class="ctg-name">STANDS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item">
+                    <div class="mini-slider-content">
+                        <img class="shadow-sm"
+                            src="https://olbac.com/olbac-website/public/storage/34/conversions/622a1883c6f88_81pYTsqUSL._SL1500_-1024x1024-thumb.jpg"
+                            loading="lazy" alt="PHOTOGRAPHY BAGS">
+                        <p class="ctg-name">PHOTOGRAPHY BAGS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item">
+                    <div class="mini-slider-content">
+                        <img class="shadow-sm"
+                            src="https://olbac.com/olbac-website/public/storage/35/conversions/622a18ab8c432_414RCfUgOpL._AC_SY780_-thumb.jpg"
+                            loading="lazy" alt="PHOTOGRAPHY TENT">
+                        <p class="ctg-name">PHOTOGRAPHY TENT</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item">
+                    <div class="mini-slider-content">
+                        <img class="shadow-sm"
+                            src="https://olbac.com/olbac-website/public/storage/36/conversions/622a18cf55327_fei1007a-thumb.jpg"
+                            loading="lazy" alt="STABILIZERS">
+                        <p class="ctg-name">STABILIZERS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item">
+                    <div class="mini-slider-content">
+                        <img class="shadow-sm"
+                            src="https://olbac.com/olbac-website/public/storage/37/conversions/622a18e7e74c0_b946544d-ecba-4b5d-af99-7db71bc6f19a-360x0-000000117230-thumb.jpg"
+                            loading="lazy" alt="BATTERIES &amp; CHARGERS">
+                        <p class="ctg-name">BATTERIES &amp; CHARGERS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item">
+                    <div class="mini-slider-content">
+                        <img class="shadow-sm"
+                            src="https://olbac.com/olbac-website/public/storage/38/conversions/622a1a3f20b37_41oPaMmQAtS._AC_SY780_-thumb.jpg"
+                            loading="lazy" alt="PHOTOGRAPHY BACKDROPS">
+                        <p class="ctg-name">PHOTOGRAPHY BACKDROPS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item">
+                    <div class="mini-slider-content">
+                        <img class="shadow-sm"
+                            src="https://olbac.com/olbac-website/public/storage/1262/conversions/622cc72798cd0_11-smallhd-focus-5-thumb.jpg"
+                            loading="lazy" alt="screen monitor">
+                        <p class="ctg-name">screen monitor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end mini slider -->
+
+    <!-- start footer -->
+    <div class="footer p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <p class="text-white textSmallFooter">Lorem ipsum Deta for All to do u the best</p>
+                    <div class="social-icons mx-auto mx-md-0">
+                        <a href="#"><i class="fab fa-facebook m-2"></i></a>
+                        <a href="#"><i class="fab fa-twitter m-2"></i></a>
+                        <a href="tel:+201012370014"><i class="fab fa-whatsapp m-2"></i></a>
+                        <a href="#"><i class="fab fa-instagram m-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5 class="textFooter">company</h5>
+                    <p class="textSmallFooter">
+                        <i class="fa fa-chevron-right m-1" style="font-size: 12px;"></i>
+                        <a href="#" class="hoverText">about us</a>
+                    </p>
+                    <p class="textSmallFooter">
+                        <i class="fa fa-chevron-right m-1" style="font-size: 12px;"></i>
+                        <a href="#" class="hoverText">contact us</a>
+                    </p>
+                    <p class="textSmallFooter">
+                        <i class="fa fa-chevron-right m-1" style="font-size: 12px;"></i>
+                        <a href="#" class="hoverText">privacy policy</a>
+                    </p>
+                    <p class="textSmallFooter">
+                        <i class="fa fa-chevron-right m-1" style="font-size: 12px;"></i>
+                        <a href="#" class="hoverText">terms & condition</a>
+                    </p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5 class="textFooter">contact</h5>
+                    <p class="textSmallFooter">
+                        <i class="fa fa-map-marker-alt m-1"></i>
+                        123 Street, New York, USA
+                    </p>
+                    <p class="textSmallFooter">
+                        <i class="fa fa-phone m-1"></i>
+                        <a href="tel:+201155741330">01155741330</a>
+                    </p>
+                    <p class="textSmallFooter">
+                        <i class="fa fa-envelope m-1"></i>
+                        info@example.com
+                    </p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5 class="textFooter">opening</h5>
+                    <h4 class="date">Sunday - Thursday</h4>
+                    <p class="textSmallFooter">9AM - 5 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
