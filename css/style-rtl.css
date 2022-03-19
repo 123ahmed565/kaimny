@@ -741,13 +741,16 @@ margin-left: -30px !important;
     margin-top: 5px !important;
 }
 
-@media (max-wiidth:768px) {
-    .news-letter-submit{
-        margin: 0px !important;
-    }
+@media (max-width:768px) {
     .mobile-block{
         display: block !important;
         margin: 0px !important;
+    }
+    .footer{
+        text-align: center;
+    }
+    .iconFooter{
+        display: none;
     }
 }
 /* end footer */
