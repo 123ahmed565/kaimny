@@ -430,7 +430,7 @@ input[type=submit]:hover {
     flex-direction: column;
 }
 
-.big-image .overlay .firstText{
+/* .big-image .overlay .firstText{
     font-size: 20px;
     position: relative;
     line-height: 20px;
@@ -438,7 +438,7 @@ input[type=submit]:hover {
     font-weight: bold;
     color: white !important;
     text-align: center !important;
-}
+} */
 
 .big-image .overlay .bigText {
     font-size: 50px;
@@ -487,24 +487,28 @@ input[type=submit]:hover {
 }
 
 @media (max-width:768px) {
-    .big-image   .overlay h1 {
-        font-size: 30px;
-        font-weight: 500;
+    .big-image .overlay .bigText {
+        font-size: 25px;
+        font-weight: 600;
         line-height: 40px;
         margin: 0 0 5px;
         position: relative;
-        bottom: -1% !important;
+        bottom: 10%;
         color: white !important;
+        text-align: center !important;
+        max-width: 900px;
     }
-    .big-image  .overlay p {
+    
+    .big-image .overlay .smallText {
         margin: 0;
-        font-size: 12px;
         position: relative;
-        bottom: -1% !important;
+        bottom: 10%;
         color: white !important;
-        font-weight: 300;
-        line-height: 20px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 70px;
         letter-spacing: 0px;
+        text-align: center !important;
     }
 }
 /* end slider */
