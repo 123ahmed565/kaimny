@@ -518,12 +518,25 @@ input[type=submit]:hover {
     top: 70%;
     left: 10%;
 }
+
+@media (max-width:768px) {
+    .Phones{
+        width: 100%;
+        top: 70%;
+        right: 0%;
+        object-fit: cover;
+        height: 400px;
+    }
+}
 /* end double phones */
 
 /* start mini slider */
 .swiper2 {
     text-align: center;
     margin-top: 420px;
+    width: 90%;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .swiper2 .item {
@@ -545,15 +558,11 @@ input[type=submit]:hover {
     text-align: center;
     color: black;
 }
-.swiper2 .owl-item {
-    width: 105px;
-}
+
 @media (max-width: 768px) {
     .swiper2 {
         width: 100%;
-    }
-    .swiper2{
-        margin: 0px !important;
+        margin-top: 220px !important;
     }
     .swiper2 .item {
         margin: 0 !important;
