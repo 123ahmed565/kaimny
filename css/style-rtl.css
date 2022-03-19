@@ -136,6 +136,11 @@ input[type=submit]:hover {
     background-color: black;
     transition: .3s all ease-in-out;
 }  
+
+.btn-close{
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
 /* end global features */
 
 
@@ -262,7 +267,7 @@ input[type=submit]:hover {
 
 @media (min-width:768px) {
     .navbar-nav{
-        margin-left: 17%;
+        margin-right: 17%;
     }
     .fa-bars{
         display: none;
@@ -310,7 +315,7 @@ input[type=submit]:hover {
 }
 #search-box .container .close {
     position: absolute;
-    right: 32px;
+    left: 32px;
     top: 32px;
     width: 32px;
     height: 32px;
@@ -599,7 +604,7 @@ input[type=submit]:hover {
     cursor: pointer;
     justify-content: center;
     align-items: center;
-    text-align: right;
+    text-align: left;
 }
 
 .iconSwiper i{
