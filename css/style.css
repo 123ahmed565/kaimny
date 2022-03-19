@@ -618,6 +618,71 @@ input[type=submit]:hover {
 }
 /* end testimonials */
 
+/* start team member */
+.cardTeams{
+    text-align: center;
+    background-color: white;
+}
+.cardTeams img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.textTeams{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0f172b;
+}
+
+.iconsTeams{
+    cursor: pointer;
+}
+
+.iconsTeams i{
+    background-color: var(--colorText);
+    color: white !important;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+}
+
+.iconsTeams i:hover{
+    background-color: white;
+    color: #00568d !important;
+    transition: .4s all ease-in-out;
+}
+/* end team member */
+
+/* start design for modal login system */
+.btn-facebook{
+    padding: 10px;
+    background-color: #097eeb;
+    color: white;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-radius: 4%;
+}
+
+.btn-google{
+    padding: 10px;
+    background-color: #ea4335;
+    color: white;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-radius: 4%;
+}
+
+.socail-modal{
+margin-left: -30px !important;
+}
+/* end design for modal login system  */
+
+
 /* start footer */
 .footer{
     background-image: url("../images/top-head/top.png");
