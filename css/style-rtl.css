@@ -545,6 +545,7 @@ input[type=submit]:hover {
 
 .swiper2 .item {
     text-align: center;
+    cursor: pointer;
 }
 .swiper2 img {
     width: 120px !important;
@@ -754,3 +755,23 @@ margin-left: -30px !important;
     }
 }
 /* end footer */
+
+/* start categories */
+.cartCategories:hover{
+    transform: scale(1.1);
+    transition: .7s all ease-in-out;
+    cursor: pointer;
+}
+
+.imgCategories{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.textCategories{
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px;
+}
+/* end categories */
