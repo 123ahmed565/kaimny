@@ -774,4 +774,105 @@ margin-left: -30px !important;
     font-size: 18px;
     padding: 5px;
 }
+
+.select{
+    background-color: #0f172b;
+    color: white;
+}
+
+@media (max-width:768px) {
+    .imgCategories{
+        width: 100%;
+        height: 250px;
+    }
+    .select{
+        display: block !important;
+    }
+}
 /* end categories */
+
+/* start page profile */
+.backgorund-profile {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url("../images/slider/bg-hero.jpg");
+}
+
+.backgorund-profile .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.backgorund-profile .overlay h1 {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 70px;
+    margin: 0 0 5px;
+    position: relative;
+    bottom: 10%;
+    color: white !important;
+    text-align: center !important;
+}
+
+.circle-profile img{
+width: 150px;
+height: 150px;
+border: 2px solid var(--colorText);
+padding: 5px;
+cursor: pointer;
+}
+
+.icon-profile{
+    position: absolute;
+    bottom: 74%;
+    left: 43%;
+    font-size: 25px;
+    background-color: var(--colorText);
+    color: white;
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.name-color-profile{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.file-image-upload{
+    border: 1px solid #ced5e1;
+    height: 100px;
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    .icon-profile{
+        position: absolute;
+        bottom: 74%;
+        left: 44%;
+        font-size: 25px;
+        background-color: var(--colorText);
+        color: white;
+        width: 45px;
+        height: 45px;
+        line-height: 40px;
+        text-align: center;
+        border: 1px solid white;
+    }
+}
+/* end page profile */
