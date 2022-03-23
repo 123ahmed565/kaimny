@@ -74,3 +74,49 @@ var swiper = new Swiper(".mySwiper3", {
         },
     }
 });
+
+// swiper page product details
+var swiper = new Swiper(".mySwiper3", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: false,
+    loop: false,
+    direction: "vertical",
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        0: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        direction: "horizontal",
+        freeMode: false,
+        },
+        600: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        direction: "horizontal",
+        },
+        1000: {
+        slidesPerView: 5,
+        spaceBetween: 60,
+        direction: "vertical",
+        },
+        1024: {
+        slidesPerView: 5,
+        spaceBetween: 20,
+        direction: "vertical",
+        },
+    },
+    });
+
+// show small img to big image page product details
+$(".vertical-swiper img").mouseover(function () {
+    var imageSrc = $(this).attr("src");
+    $(".block img").attr("src", imageSrc);
+});
