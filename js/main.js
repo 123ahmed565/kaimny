@@ -19,7 +19,31 @@ $(document).keyup(function (e) {
     }
 });
 
-// swiper mini slider
+// preloader
+window.onload = function () {
+    document.querySelector(".preloaders").style.display = "none";
+};
+
+// to top
+const scrollBtn = document.querySelector(".scroll-to-top");
+const upperbar = document.querySelector(".upperbar");
+
+scrollBtn.style.display = "none";
+
+scrollBtn.addEventListener("click", () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
+
+document.addEventListener("scroll", (e) => {
+    if (document.documentElement.scrollTop <= 100) {
+    scrollBtn.style.display = "none";
+    } else {
+    scrollBtn.style.display = "block";
+    }
+});
+
+// swiper categories
 var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 6.5,
     spaceBetween: 5,
@@ -31,7 +55,7 @@ var swiper = new Swiper(".mySwiper2", {
     breakpoints:{
         0: {
             slidesPerView: 3.5,
-            spaceBetween: 10,
+            spaceBetween: 5,
         },
         600: {
             slidesPerView: 5.5,
@@ -76,7 +100,7 @@ var swiper = new Swiper(".mySwiper3", {
 });
 
 // swiper page product details
-var swiper = new Swiper(".mySwiper3", {
+var swiper = new Swiper(".mySwiper4", {
     slidesPerView: 3,
     spaceBetween: 30,
     freeMode: false,
@@ -108,7 +132,7 @@ var swiper = new Swiper(".mySwiper3", {
         direction: "vertical",
         },
         1024: {
-        slidesPerView: 5,
+        slidesPerView: 4.5,
         spaceBetween: 20,
         direction: "vertical",
         },

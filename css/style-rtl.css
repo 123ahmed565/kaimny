@@ -143,6 +143,110 @@ input[type=submit]:hover {
 }
 /* end global features */
 
+/* preloader*/
+.preloaders {
+    position: fixed;
+    z-index: 99999;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.preloaders .loaders {
+    border: 0px solid transparent;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.loaders::before {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+}
+
+.loaders:before,
+.loaders:after {
+    content: "";
+    border: 10px solid var(--colorText);
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: loader 2s linear infinite;
+            animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+@-webkit-keyframes loader {
+    0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    }
+    50% {
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+    }
+}
+
+@keyframes loader {
+    0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    }
+    50% {
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+    }
+}
+/* end preloader */
+
+/* start top button */
+.scroll-to-top{
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    border-radius: 10%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background:var(--colorText);  
+    border: none;  
+    transition-duration: 500ms;
+    z-index: 2;
+}
+
+.scroll-to-top:hover{
+    background: black;
+    transition: .3s all ease-in-out;
+}
+
+@media (max-width:768px) {
+    .scroll-to-top{
+        left: 20px;
+        bottom: 60px;
+        width: 40px;
+        height: 40px;
+    }
+}
+/* end top button */
+
 
 /* start navbar canavs */
 .fa-bars{
@@ -534,65 +638,36 @@ input[type=submit]:hover {
 }
 /* end double phones */
 
-/* start mini slider */
-.swiper2 {
-    text-align: center;
-    margin-top: 420px;
-    width: 90%;
-    margin-left: 40px;
-    margin-right: 40px;
+/* start categories */
+.categories{
+    margin-top: 380px;
 }
 
-.swiper2 .item {
-    text-align: center;
-    cursor: pointer;
+.mySwiper2 .swiper-slide{
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
-.swiper2 img {
-    width: 120px !important;
-    height: 120px;
+
+.sectionCategories img{
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     border: 2px solid var(--colorText);
-    padding: 5px;
-    display: inline-block !important;
-}
-.swiper2 .ctg-name {
-    margin-top: 20px;
-    font-weight: bold;
-    font-size: 14px;
-    text-transform: capitalize;
-    text-align: center;
-    color: black;
+    padding: 3px;
 }
 
-@media (max-width: 768px) {
-    .swiper2 {
-        width: 100%;
-        margin-top: 220px !important;
+@media (max-width:768px) {
+    .categories{
+        margin-top: 225px;
     }
-    .swiper2 .item {
-        margin: 0 !important;
-        height: auto;
-        text-align: center !important;
-        width: 100% !important;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    .swiper2 .item img {
-        display: inline-block;
-        width: 75px !important;
-        height: 75px !important;
-    }
-    .swiper2 .ctg-name {
-        font-size: 12px;
-        width: 87px;
+    .sectionCategories img{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
     }
 }
-
-/* end mini slider */
+/* end categories */
 
 /* start testimonials */
 .sectionTestimonials{
@@ -881,14 +956,15 @@ cursor: pointer;
 .vertical-swiper .swiper {
     width: 100%;
     height: 100%;
-    max-height: 400px !important;
-    min-height: 443px;
+    max-height: 313px !important;
+    min-height: 370px;
 }
 
 .vertical-swiper .swiper-slide img {
     display: block;
     width: 100%;
     height: 70px;
+    border-radius: 5px;
 }
 
 .vertical-swiper .item{
@@ -896,7 +972,7 @@ cursor: pointer;
     padding: 5px;
     border-radius: 8px;
     width: 90px;
-    height: 90px;
+    height: 80px;
 }
 
 .vertical-swiper .item:hover{
@@ -910,8 +986,8 @@ cursor: pointer;
 
 .block img{
     width: 100%;
-    height: 449px;
-    object-fit: contain;
+    height: 300px;
+    /* object-fit: contain; */
 }
 
 .share-product{
