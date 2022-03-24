@@ -639,7 +639,7 @@ input[type=submit]:hover {
 /* end double phones */
 
 /* start categories */
-.categories{
+.categoriesHome{
     margin-top: 420px;
 }
 
@@ -658,7 +658,7 @@ input[type=submit]:hover {
 }
 
 @media (max-width:768px) {
-    .categories{
+    .categoriesHome{
         margin-top: 225px;
     }
     .sectionCategories img{
