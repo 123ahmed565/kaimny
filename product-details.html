@@ -13,6 +13,8 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/style-rtl.css">
     <title>Kaimny | Product details</title>
@@ -133,7 +135,7 @@
                         <div class="row">
                             <div class="col-md-3 ">
                                 <div class="vertical-swiper mt-sm-0 mt-md-2">
-                                    <div class="swiper mySwiper4">
+                                    <div class="swiper mySwiper4" dir="ltr">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="item">
@@ -182,7 +184,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 d-none d-sm-block">
                     <div class="box-product-details p-5">
                         <!-- name product -->
                         <p class="text-uppercase m-0 p-0">أسماك</p>
@@ -264,26 +266,142 @@
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                                type="button" role="tab" aria-controls="home" aria-selected="true">الرئيسية</button>
+                                type="button" role="tab" aria-controls="home" aria-selected="true">المعلومات</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                                type="button" role="tab" aria-controls="profile" aria-selected="false">المنتجات</button>
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">التقييم</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-                                type="button" role="tab" aria-controls="contact" aria-selected="false">الاتصال</button>
+                                type="button" role="tab" aria-controls="contact" aria-selected="false">قائمة
+                                الاسعار</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="team-tab" data-bs-toggle="tab" data-bs-target="#team"
+                                type="button" role="tab" aria-controls="team" aria-selected="false">
+                                فريق العمل</button>
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
+                        <!-- first tab information -->
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            احمد سراج
+                            <!-- title -->
+                            <div class="title d-flex justify-content-between border-bottom w-25 mt-3">
+                                <div class="d-flex">
+                                    <p>اسماك <span>اسماك بحرى</span></p>
+                                </div>
+                                <div class="share addToHeart" style="cursor: pointer;">
+                                    <i class="far fa-heart change-between fs-5 mt-1"></i>
+                                </div>
+                            </div>
+                            <!-- subTitle -->
+                            <div class="subTitle border-bottom w-25 mt-3">
+                                <p>مطعم يقدم الاطباق الايطالية</p>
+                            </div>
+                            <!-- address -->
+                            <div class="address border-bottom w-25 mt-3">
+                                <h5>العنوان</h5>
+                                <p>242 طريق الجيش مصطفى كامل , سيدى جابر, الاسكندرية</p>
+                            </div>
+                            <!-- time of close & open -->
+                            <div class="timeAndOpen">
+                                <div class="d-flex">
+                                    <p>وقت الفتح:</p>
+                                    &nbsp;&nbsp;
+                                    <p>9:00 صباحا</p>
+                                </div>
+                                <div class="d-flex">
+                                    <p>وقت الغلق:</p>
+                                    &nbsp;&nbsp;
+                                    <p>5:00 مساءا</p>
+                                </div>
+                            </div>
                         </div>
+                        <!-- second tab review product -->
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            يوسف برديسى
+                            <div class="row mt-3">
+                                <div class="col-3 col-md-2">
+                                    <div class="img-reveiw">
+                                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                                            alt="image reveiew" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="col-8 col-md-4 desc-review">
+                                    <div class="clear-fix">
+                                        <p class="float-end text-black">احمد سراج</p>
+                                        <div class="d-flex float-start">
+                                            <i class="fas fa-star text-blue"></i>
+                                            <i class="fas fa-star text-blue"></i>
+                                            <i class="fas fa-star text-blue"></i>
+                                            <i class="far fa-star text-blue"></i>
+                                            <i class="far fa-star text-blue"></i>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="d-block float-end">
+                                        <p class="m-0">لقد استمتعت كثيرا بهذا الاكل الرائع الجميل شكرا لكم ع هذة الجوده
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <!-- third tab filter category -->
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                            بيرو البرت
+                            <div class="row mt-3 w-50 mobileView">
+                                <div class="col-6 col-md-4">
+                                    <div class="contentCat" data-bs-toggle="modal" data-bs-target="#exampleModal-5">
+                                        <img class="imageCat"
+                                            src="https://m.media-amazon.com/images/I/51MW5l61nPL._AC_.jpg"
+                                            alt="category image" loading="lazy">
+                                        <p class="text-center mt-2 fw-bold">فلاتر مياه</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="contentCat" data-bs-toggle="modal" data-bs-target="#exampleModal-5">
+                                        <img class="imageCat"
+                                            src="https://images-na.ssl-images-amazon.com/images/I/81RN4VZqvqL.__AC_SY300_SX300_QL70_ML2_.jpg"
+                                            alt="category image" loading="lazy">
+                                        <p class="text-center mt-2 fw-bold">شمعات</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="contentCat" data-bs-toggle="modal" data-bs-target="#exampleModal-5">
+                                        <img class="imageCat"
+                                            src="https://cdn.salla.sa/mwKrz/cSojEDs0zlZyScxVij1jKKlRKkBkf3ysbXXoUxZb.jpg"
+                                            alt="category image" loading="lazy">
+                                        <p class="text-center mt-2 fw-bold">قطع غيار</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fourth tab review team -->
+                        <div class="tab-pane fade" id="team" role="tabpanel" aria-labelledby="team-tab">
+                            <div class="row mt-3">
+                                <div class="col-3 col-md-2">
+                                    <div class="img-reveiw">
+                                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                                            alt="image reveiew" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="col-8 col-md-4 desc-review">
+                                    <div class="clear-fix">
+                                        <p class="float-end text-black">احمد كمال</p>
+                                        <div class="d-flex float-start">
+                                            <i class="fas fa-star text-blue"></i>
+                                            <i class="fas fa-star text-blue"></i>
+                                            <i class="fas fa-star text-blue"></i>
+                                            <i class="far fa-star text-blue"></i>
+                                            <i class="far fa-star text-blue"></i>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="d-block float-end">
+                                        <p class="m-0">لقد استمتعت كثيرا بهذا الاكل الرائع الجميل شكرا لكم ع هذة الجوده
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -358,6 +476,8 @@
         </script>
     <script async src="https://static.addtoany.com/menu/page.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js">
+    </script>
     <script src="./js/main.js"></script>
 
 
@@ -379,7 +499,8 @@
                             <input type="text" class="form-control" id="recipient-name" placeholder="الايميل" required>
                         </div>
                         <div class="mb-3">
-                            <input type="number" class="form-control" id="recipient-name" placeholder="رقم الهاتف" required>
+                            <input type="number" class="form-control" id="recipient-name" placeholder="رقم الهاتف"
+                                required>
                         </div>
                         <div class="mb-3">
                             <input type="password" class="form-control" id="recipient-name" placeholder="كلمة السر"
@@ -470,6 +591,106 @@
                         </button>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- start modal Details One Categories -->
+    <div class="modal fade" id="exampleModal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> التفاصيل </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- <form> -->
+                    <div class="modal-body">
+                        <!-- image -->
+                        <img class="modalImage" src="https://m.media-amazon.com/images/I/51MW5l61nPL._AC_.jpg"
+                            alt="category image" loading="lazy">
+
+                        <!-- title  -->
+                        <div class="title border-bottom">
+                            <h5 class="fw-bold mt-4">فلتر 7 مراحل RO (قسط)</h5>
+                        </div>
+
+                        <!-- description -->
+                        <h5 class="mt-2">الوصــف</h5>
+                        <p class="border-bottom mt-2"> يتم التركيب بمقدم 750 جنية والباقى على 10 شهوركل شهر 200 جنية</p>
+
+                        <!-- price & quantity -->
+                        <div class="priceAndQuantity d-flex justify-content-between">
+                            <p class="mt-3 fw-bold fs-5">السعر <span>200 جنية</span></p>
+                            <div class="quantity d-flex mt-2">
+                                <i class="fas fa-plus m-2 plus"></i>
+                                <p class="mt-2 fw-bold">1</p>
+                                <i class="fas fa-minus m-2 minus"></i>
+                            </div>
+                        </div>
+
+                        <!-- button add to cart -->
+                        <button class="mx-auto d-block btn">
+                            أضـــف الى العربة
+                        </button>
+
+                    </div>
+                <!-- </form> -->
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" class="btn pe-3 ps-3">
+                        اغــلاق
+                    </button>
+                    <button class="btn pe-3 ps-3" data-bs-dismiss="modal" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal-5">
+                        الرجوع
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start modal All Categories -->
+    <div class="modal fade" id="exampleModal-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> القســــم </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                    <div class="modal-body">
+
+                        <!-- One Items -->
+                        <div class="oneItems mb-3 d-flex justify-content-between" data-bs-dismiss="modal"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal-4">
+                            <!-- image -->
+                            <img class="ImageAgain" src="https://m.media-amazon.com/images/I/51MW5l61nPL._AC_.jpg"
+                                alt="category image" loading="lazy">
+                            <div class="d-block">
+                                <h5>فلتر 7 مراحل RO (قسط)</h5>
+                                <p>يتم التركيب بمقدم 750 جنية والباقى على10 شهور كل شهر200 جنية</p>
+                            </div>
+                        </div>
+
+                        <!-- One Items -->
+                        <div class="oneItems d-flex justify-content-between" data-bs-dismiss="modal"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal-4">
+                            <!-- image -->
+                            <img class="ImageAgain"
+                                src="https://images-na.ssl-images-amazon.com/images/I/81RN4VZqvqL.__AC_SY300_SX300_QL70_ML2_.jpg"
+                                alt="category image" loading="lazy">
+                            <div class="d-block">
+                                <h5>شمعات</h5>
+                                <p>يتم التركيب بمقدم 750 جنية والباقى على10 شهور كل شهر200 جنية</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" class="btn pe-3 ps-3">
+                        اغــلاق
+                    </button>
+                </div>
             </div>
         </div>
     </div>

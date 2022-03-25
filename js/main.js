@@ -104,7 +104,7 @@ var swiper = new Swiper(".mySwiper4", {
     slidesPerView: 3,
     spaceBetween: 30,
     freeMode: false,
-    loop: false,
+    loop: true,
     direction: "vertical",
     pagination: {
         el: ".swiper-pagination",
@@ -144,3 +144,47 @@ $(".vertical-swiper img").mouseover(function () {
     var imageSrc = $(this).attr("src");
     $(".block img").attr("src", imageSrc);
 });
+
+// Start Taostr js to alert
+toastr.options = {
+    closeButton: true,
+    debug: false,
+    newestOnTop: false,
+    progressBar: true,
+    positionClass: "toast-top-left",
+    preventDuplicates: false,
+    onclick: null,
+    showDuration: "300",
+    hideDuration: "100",
+    timeOut: "2000",
+    extendedTimeOut: "60000",
+    showEasing: "swing",
+    hideEasing: "linear",
+    showMethod: "fadeIn",
+    hideMethod: "fadeOut",
+};
+
+$(".addToCart").click(function () {
+toastr.success("تم الاضافة الى السلة");
+});
+
+$(".addToHeart").click(function () {
+toastr.success("تم الاضافة الى المفضلة");
+});
+
+$(".delete-this").click(function () {
+toastr.success("Delete cart");
+});
+
+// change two class  between icon heart
+$(document).ready(function () {
+    $(document).on("click", ".change-between", function () {
+      if ($(this).hasClass("far")) {
+        $(this).removeClass("far");
+        $(this).addClass("fas");
+      } else {
+        $(this).removeClass("fas");
+        $(this).addClass("far");
+      }
+    });
+  });
