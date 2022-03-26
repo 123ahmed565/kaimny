@@ -148,127 +148,95 @@
     </nav>
     <!--end header  -->
 
-    <!-- start header -->
-    <nav class="navbar navbar-expand-sm shadow-sm bg-white sticky-top">
+    <!-- start categories -->
+    <div class="categories">
         <div class="container">
-            <i class="fas fa-bars  fa-2x mt-2 mr-3" data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
-            <a href="./index.html"> <img class="logo-navbar shadow-lg" src="" style="border-radius: 50%;" width="80"
-                    height="80" alt="image logo" loading="lazy"> </a>
-            <div class="offcanvas offcanvas-end" id="demo">
-                <div class="offcanvas-header">
-                    <h1 class="offcanvas-title"><a href="./index.html"> <img src="" width="80" height="80"
-                                alt="image menu" loading="lazy"></a></h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            <h3 class="text-center mt-4 fs-2 fw-bold">أقســــــام....</h3>
+            <div class="row mt-5">
+                <div class="col-12 col-md-3">
+                    <p class="fw-bold fs-4 d-none d-sm-block">ألاقســــــــــام</p>
+                    <!-- display for PC -->
+                    <div class="forPc d-none d-sm-block">
+                        <div class="form">
+                            <div class="form-check mb-2">
+                                <input type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label for="flexCheckIndeterminate">
+                                    برجر
+                                </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label for="flexCheckIndeterminate">
+                                    دجاج
+                                </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label for="flexCheckIndeterminate">
+                                    بيتزا
+                                </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label for="flexCheckIndeterminate">
+                                    أسماك
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- display for Mobile -->
+                    <select class="select d-none">
+                        <option value="">أقسامنــــــــا</option>
+                        <option value="برجر"> برجر </option>
+                        <option value="دجاج"> دجاج </option>
+                        <option value="بيتزا">بيتزا</option>
+                        <option value="أسماك"> أسماك</option>
+                    </select>
                 </div>
-                <div class="offcanvas-body col justify-content-md-between">
-                    <ul class="navbar-nav">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="./index.html">الرئيسية</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./about-us.html">من نحن</a>
-                        </li>
-                        <div class="dropdown">
-                            <li class="nav-item d-none d-sm-block d-flex" id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <a class="nav-link d-flex chevron-active" href="#">
-                                    <span class="d-flex">الأقسام<i class="chevron-i fa fa-chevron-down d-flex mt-1 m-1"
-                                            style="display: block !important;"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <ul class="dropdown-menu m-0 p-0" aria-labelledby="dropdownMenuButton1">
-                                <li>
-                                    <a class="dropdown-item hover-it"> أكل</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item hover-it">عيادات</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item hover-it">محاميين</a>
-                                </li>
-                        </div>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./our-works.html">أراء العملاء</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact-us.html">أتصل بنا</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./testimonails.html">فريقنا</a>
-                        </li>
-                    </ul>
-
-                    <div class="icons">
-                        <!-- start modal user -->
-                        <button type="button" class="btn-login mt-3 mt-md-0" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal" data-bs-whatever="@mdo">
-                            <i class="fas fa-user text-white"></i>
-                        </button>
-
-                        <!-- button cart -->
-                        <a href="./cart.html">
-                            <button class="icon-top">
-                                <i class="fa fa-cart-plus text-white"></i>
-                                <span class="badge-cart">3</span>
-                            </button>
-                        </a>
-
-                        <!-- button heart -->
-                        <a href="./favourite.html">
-                            <button class="icon-top">
-                                <i class="far fa-heart text-white"></i>
-                                <span class="badge-heart">3</span>
-                            </button>
-                        </a>
-
-                        <!-- start search modal -->
-                        <a href="#search">
-                            <i class="fas fa-search text-white m-2"></i>
-                        </a>
-                        <div id="search-box">
-                            <div class="container">
-                                <a class="close" href="#close"></a>
-                                <div class="search-main">
-                                    <div class="search-inner">
-                                        <input type="text" id="inputSearch" name="firstname"
-                                            placeholder="أبحث هنـــــــا...">
-                                    </div>
+                <div class="col-12 col-md-9">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <a href="./product-details.html">
+                                <div class="cartCategories shadow-sm text-center">
+                                    <img class="imgCategories" src="./images/categoriesImages/cat1.jpg"
+                                        alt="categories image" loading="lazy">
+                                    <p class="mt-2 textCategories">برجر</p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-
-                        <!-- start dropdown profile -->
-                        <div class="dropdown for-mobile-none">
-                            <button class="dropbtn">
-                                <img src="https://elbarkaa.com/assets/website/images/elbaraka-logo%20white%20.png"
-                                    alt="profile image" loading="lazy" class="image-profile">
-                            </button>
-                            <div class="dropdown-content" style="top:30px;left:20px;min-width:200px;border-radius:5px">
-                                <img class="mx-auto d-block mt-2"
-                                    src="https://elbarkaa.com/assets/website/images/elbaraka-logo%20white%20.png"
-                                    width="80" height="80" alt="image profile" style="border-radius:50%;">
-                                <p class="text-center nameProfile mt-2">Ahmed Serag</p>
-                                <p class="textMenu text-white m-2">
-                                    <i class="fa fa-info-circle m-1"></i>
-                                    About Us
-                                </p>
-                                <p class="textMenu text-white m-2">
-                                    <i class="fa fa-phone-alt m-1"></i>
-                                    Contact Us
-                                </p>
-                                <p class="textMenu text-white m-2">
-                                    <i class="fa fa-cog m-1"></i>
-                                    Settings
-                                </p>
-                            </div>
+                        <div class="col-12 col-md-4">
+                            <a href="./product-details.html">
+                                <div class="cartCategories shadow-sm text-center">
+                                    <img class="imgCategories" src="./images/categoriesImages/cat2.jpg"
+                                        alt="categories image" loading="lazy">
+                                    <p class="mt-2 textCategories">بيتزا</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <a href="./product-details.html">
+                                <div class="cartCategories shadow-sm text-center">
+                                    <img class="imgCategories" src="./images/categoriesImages/cat-3.jpg"
+                                        alt="categories image" loading="lazy">
+                                    <p class="mt-2 textCategories">فراخ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <a href="./product-details.html">
+                                <div class="cartCategories shadow-sm text-center">
+                                    <img class="imgCategories" src="./images/categoriesImages/cat-4.jpg"
+                                        alt="categories image" loading="lazy">
+                                    <p class="mt-2 textCategories">سمك</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </nav>
-    <!--end header  -->
+    </div>
+    <!-- end categories -->
 
     <!-- start footer -->
     <div class="footer p-3 mt-5">
