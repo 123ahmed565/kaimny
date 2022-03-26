@@ -261,6 +261,7 @@ input[type=submit]:hover {
 
 .offcanvas {
     width: 70% !important;
+    display: none;
 }
 
 .nav-item .nav-link{
@@ -426,7 +427,7 @@ input[type=submit]:hover {
     font-size: 16px;
 }
 
-@media (min-width:768px) {
+@media (min-width:991px) {
     .navbar-nav{
         margin-right: 17%;
     }
@@ -437,9 +438,12 @@ input[type=submit]:hover {
         color: white;
         white-space: nowrap;
     }
+    .offcanvas{
+        display: block;
+    }
 }
 
-@media (max-width:768px) {
+@media (max-width:574px) {
     .navbar-expand-sm .navbar-nav .nav-link{
         color: black !important;
     }
@@ -453,6 +457,9 @@ input[type=submit]:hover {
     }
     .icons i{
         color: black !important;
+    }
+    .offcanvas{
+        display: block;
     }
 }
 /* end navbar canvas */
@@ -680,8 +687,24 @@ input[type=submit]:hover {
     height: 700px;
     object-fit: contain;
     position: absolute;
-    top: 70%;
+    top: 85%;
     left: 10%;
+}
+
+@media (min-width:1366px) {
+    .Phones{
+        top: 75%;
+        left: 10%;
+    }
+}
+
+@media (min-width:1367px) {
+    .Phones{
+        top: 73%;
+        left: 23%;
+        object-fit: cover;
+        height: 800px;
+    }
 }
 
 @media (max-width:768px) {
@@ -697,8 +720,8 @@ input[type=submit]:hover {
 
 /* start categories */
 .categoriesHome{
-    /* margin-top: 420px; */
-    margin-top: 30px;
+    margin-top: 400px;
+    /* margin-top: 30px; */
 }
 
 .mySwiper2 .swiper-slide{
@@ -840,7 +863,7 @@ margin-left: -30px !important;
 .footer{
     background-image: url("../images/top-head/top.png");
     background-position: center center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 
 .textFooter{
