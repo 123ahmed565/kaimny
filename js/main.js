@@ -56,6 +56,7 @@ var swiper = new Swiper(".mySwiper2", {
         0: {
             slidesPerView: 3.5,
             spaceBetween: 5,
+            slideToClickedSlide: true,
         },
         600: {
             slidesPerView: 5.5,
