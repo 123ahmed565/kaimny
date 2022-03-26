@@ -341,6 +341,21 @@ input[type=submit]:hover {
 
 .dropdown:hover .dropdown-content {display: block;}
 
+  /* start drop down nav pc */
+  .hover-it{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.hover-it:hover{
+    background-color: var(--colorText);
+    color: white;
+    cursor: pointer;
+}
+  /* end drop down nav pc */
+
 .image-profile{
     width: 27px;
     height: 27px;
@@ -682,7 +697,8 @@ input[type=submit]:hover {
 
 /* start categories */
 .categoriesHome{
-    margin-top: 420px;
+    /* margin-top: 420px; */
+    margin-top: 30px;
 }
 
 .mySwiper2 .swiper-slide{
@@ -692,8 +708,8 @@ input[type=submit]:hover {
 }
 
 .sectionCategories img{
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     border: 2px solid var(--colorText);
     padding: 3px;
@@ -701,7 +717,8 @@ input[type=submit]:hover {
 
 @media (max-width:768px) {
     .categoriesHome{
-        margin-top: 225px;
+        /* margin-top: 225px; */
+        margin-top:  30px;
     }
     .sectionCategories img{
         width: 90px;
@@ -904,6 +921,9 @@ margin-left: -30px !important;
     }
     .select{
         display: block !important;
+    }
+    .cartCategories:hover{
+        transform: none;
     }
 }
 /* end categories */

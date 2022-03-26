@@ -145,6 +145,32 @@ $(".vertical-swiper img").mouseover(function () {
     $(".block img").attr("src", imageSrc);
 });
 
+// this for top head when click on button categories
+$(document).on('click','.chevron-active',function(){
+    if($('.chevron-i').hasClass('fa-chevron-down')){
+    $('.chevron-i').removeClass('fa-chevron-down');
+    $('.chevron-i').addClass('fa-chevron-up');    
+    }
+    else{
+        $('.chevron-i').addClass('fa-chevron-down');
+        $('.chevron-i').removeClass('fa-chevron-up');
+    }
+});
+
+// change two class  between icon heart
+$(document).ready(function () {
+    $(document).on("click", ".change-between", function () {
+    if ($(this).hasClass("far")) {
+        $(this).removeClass("far");
+        $(this).addClass("fas");
+    } else {
+        $(this).removeClass("fas");
+        $(this).addClass("far");
+    }
+    });
+});
+
+
 // Start Taostr js to alert
 toastr.options = {
     closeButton: true,
@@ -164,27 +190,16 @@ toastr.options = {
     hideMethod: "fadeOut",
 };
 
-$(".addToCart").click(function () {
-toastr.success("تم الاضافة الى السلة");
-});
-
-$(".addToHeart").click(function () {
-toastr.success("تم الاضافة الى المفضلة");
-});
-
-$(".delete-this").click(function () {
-toastr.success("Delete cart");
-});
-
-// change two class  between icon heart
-$(document).ready(function () {
-    $(document).on("click", ".change-between", function () {
-      if ($(this).hasClass("far")) {
-        $(this).removeClass("far");
-        $(this).addClass("fas");
-      } else {
-        $(this).removeClass("fas");
-        $(this).addClass("far");
-      }
+    $(".addToCart").click(function () {
+    toastr.success("تم الاضافة الى السلة");
     });
-  });
+
+    $(".addToHeart").click(function () {
+    toastr.success("تم الاضافة الى المفضلة");
+    });
+
+    $(".delete-this").click(function () {
+    toastr.success("Delete cart");
+    });
+
+
