@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/style-rtl.css">
-    <title>Kaimny | Payment</title>
+    <title>Kaimny | Done</title>
 </head>
 
 <body>
@@ -152,86 +152,155 @@
     </nav>
     <!--end header  -->
 
-
-    <!-- start payment -->
-    <div class="payment">
+    <!-- start order-details -->
+    <div class="order-details mt-4">
         <div class="container">
-
-            <div class="content-steps">
-                <ul class="progress-timeline">
-                    <li class="active">الشحـــن</li>
-                    <li class="active">الدفـــــع</li>
-                    <li>تــــم</li>
-                </ul>
+            <h3 class="mb-4">معلومات عن الاوردر</h3>
+            <div class="table-order-details table-bg p-2 mt-3">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <h2>طريقة الدفع</h2>
+                        <p class="text-black">عند التسليم</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h2>المستلم</h2>
+                        <p class="text-black">احمد كمال</p>
+                        <p class="text-black">مصر, الشرقية</p>
+                        <p class="text-black">الشرقية - بلبيس - شارع 21 - صبحي فهمي - عمارة: 123 - ط
+                            الرقم: 1 - شقة رقم 7 التفاصيل: 21 ش صبحى فهمى ارض الجولف
+                        </p>
+                        <p class="text-black">رقم موبايل: +201154741330</p>
+                    </div>
+                    <!-- <div class="col-12 col-md-4">
+                        <h2>مراجعة الاوردر</h2>
+                        <p class="text-black">SubTotal ( 2 Items ): 510 EGP</p>
+                        <p class="text-black">shipping fees: 36 EGP</p>
+                        <p class="text-black">Code Fees 5 EGP</p>
+                        <p class="text-black">Grand Total 551 EGP</p>
+                    </div> -->
+                </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-5 col-sm-12 shadow-sm ">
-                    <h2 class="text-upperacse">عربة التسوق الخاصة بي</h2>
-                    <div class="box-shipping-product">
-                        <div class="row">
-                            <div class="col-4 col-md-4">
-                                <img src="./images/categoriesImages/cat1.jpg" class="img-responsive"
-                                    alt="image shipping" loading="lazy">
-                            </div>
-                            <div class="col-8 col-md-8">
-                                <p class="name-mobile m-0 p-0">برجر</p>
-                                <p class="text">بيج تيستى يقدم مع بطاطس والكولا</p>
-                                <p class="price-swiper m-0 p-0 fw-bold">100.00 جنيه</p>
 
-                                <div class="item-shipping d-flex justify-content-between mt-3">
-                                    <p class="text-dark">الكمية:</p>
-                                    <p class="text-dark">1</p>
-                                </div>
 
-                                <div class="shipping-price d-flex justify-content-between">
-                                    <p class="text-dark">الشحن:</p>
-                                    <p class="text-dark fw-bold">50.00 جنيه</p>
-                                </div>
+            <div class="shipment-track mt-3">
+                <!-- <div class="row border-bottom text-center">
+                    <div class="col-12 col-md-4">
+                        <h5>Shipment 2 Of 2</h5>
+                        <p style="color: red; font-weight: 500;">pending</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h5>Shipped By: Olbac.com</h5>
+                        <p style="color: var(--colorText);font-weight: 700;">Tracking #: 1005</p>
+                    </div>
+                    <div class="col-12 col-md-4 mt-3">
+                        <h5 class="text-decoration-underline"><a href="./shipping.html">Track Shipment</a></h5>
+                    </div>
+                </div> -->
 
-                                <div class="grand-total d-flex justify-content-between">
-                                    <p class="text-dark">المجموع الكلى:</p>
-                                    <p class="text-dark text-nowrap fw-bold">150.00 جنيه</p>
-                                </div>
-                            </div>
+                <!-- first progress bar  -->
+                <div class="stepper-wrapper mt-4">
+                    <div class="stepper-item1 ">
+                        <div class="step-name1 text-uppercase">
+                            <i class="fas fa-fill track-active fa-4x color-gray"></i>
+                        </div>
+                    </div>
+                    <div class="stepper-item1">
+                        <div class="step-name1 text-uppercase">
+                            <i class="fas fa-check-circle fa-4x color-gray"></i>
+                        </div>
+                    </div>
+                    <div class="stepper-item1">
+                        <div class="step-name1 text-uppercase">
+                            <i class="fas fa-truck fa-4x color-gray"></i>
+                        </div>
+                    </div>
+                    <div class="stepper-item1">
+                        <div class="step-name1 text-uppercase">
+                            <i class="fas fa-clipboard-check fa-4x color-gray"></i>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7 col-sm-12 shadow-sm secondPart">
 
-                    <div class="box-to-box-address shadow-sm p-2">
-                        <h2 class="text-nowrap">شحن الى عنوانى</h2>
-                        <form action="" class="d-flex">
-                              <label for="html">الشرقية - بلبيس - شارع 21 - صبحي فهمي - عمارة: 123 - ط
-                                الرقم: 1 - شقة رقم 7 التفاصيل: 21 ش صبحى فهمى ارض الجولف</label>
-                        </form>
+
+                <!-- second progress bar  -->
+                <div class="stepper-wrapper">
+                    <div class="stepper-item completed">
+                        <div class="step-counter"></div>
+                        <div class="step-name text-uppercase">جاري المعالجة</div>
                     </div>
+                    <div class="stepper-item">
+                        <div class="step-counter"></div>
+                        <div class="step-name text-uppercase">تم التأكيد</div>
+                    </div>
+                    <div class="stepper-item">
+                        <div class="step-counter"></div>
+                        <div class="step-name text-uppercase">الشحن</div>
+                    </div>
+                    <div class="stepper-item">
+                        <div class="step-counter"></div>
+                        <div class="step-name text-uppercase">تم التوصيل</div>
+                    </div>
+                </div>
 
-                    <p class="mt-4 text-black fw-bold">طريقة الدفع<br>
-                        <!-- <span class="fw-normal">how would you like to pay ?</span> -->
-                    </p>
-
-                    <form action="#">
-                        <div class="all">
-                            <div
-                                class="cash-payment  d-flex justify-content-between align-items-center mb-4 p-1 shadow-sm">
-                                <div class="check d-flex">
-                                      <input type="radio" id="adrress" name="addresses" value="check-address">
-                                      <label for="html">الدفع عند التسليم</label>
+                <div class="row mt-3">
+                    <div class="col-6 col-md-4">
+                        <div class="cart-img">
+                            <img src="./images/categoriesImages/cat1.jpg" alt="image cart" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-8">
+                        <div class="content-swiper bg-white mt-5">
+                            <p class="text-uppercase m-0 p-0 name-mobile">برجر</p>
+                            <p class="text">برجر تيستى يقدم مع بططاطس والكولا</p>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <p class="price-swiper m-0 p-0">100,00 جنيه</p>
+                                </div>
+                                <div class="col-12 col-md-12 d-flex">
+                                    <i class="fas fa-star text-blue"></i>
+                                    <i class="fas fa-star text-blue"></i>
+                                    <i class="fas fa-star text-blue"></i>
+                                    <i class="far fa-star text-blue"></i>
+                                    <i class="far fa-star text-blue"></i>
                                 </div>
                             </div>
                         </div>
-                    </form>
-                    <a href="./done.html">
-                        <button type="submit" class="btn w-100 mb-2 fw-bold">تقديم الطلب</button>
-                    </a>
+                        <br>
+                        <span class="text-black fw-bold p-2 rounded" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal-7" style="cursor: pointer; border:1px solid black;">
+                            قيم ألأن
+                        </span>
+                    </div>
+                </div>
 
+                <div class="description-porduct">
+
+                </div>
+            </div>
+
+            <div class="description-product">
+                <div class="items d-flex">
+                    <p class="text-black">المجموع الفرعى: &nbsp;</p>
+                    <p class="text-black">100 جنيه</p>
+                </div>
+                <div class="items d-flex">
+                    <p class="text-black">خدمة التوصيل: &nbsp;</p>
+                    <p class="text-black">50 جنيه</p>
+                </div>
+                <div class="items d-flex">
+                    <p class="text-black">خدمة الضريبة المضافة: &nbsp; </p>
+                    <p class="text-black">15 جنيه</p>
+                </div>
+                <div class="items d-flex">
+                    <p class="text-black fw-bold mt-1">المجموع الكلى: &nbsp;</p>
+                    <p class="text-danger fw-bold fs-4">165 جنيه</p>
                 </div>
             </div>
 
         </div>
     </div>
-    <!-- end payment -->
+    <!-- end order-details -->
 
 
     <!-- start footer -->
@@ -409,6 +478,40 @@
                     <div class="modal-footer">
                         <button type="submit" class="btn mx-auto d-block pe-3 ps-3">
                             ارسال
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal rate product -->
+    <div class="modal fade " id="exampleModal-7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-body">
+                        <h4 class="text-center">قيم المنتج الان</h4>
+                        <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                        </div>
+                        <p class="text-center mt-5 text-black">يرجى تقييم المنتج بالضغط على النجوم</p>
+                        <hr>
+                        <h3 class="text-center" style="color:var(--colorText)">ادخل تقييمك</h3>
+                        <Textarea></Textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn w-100">
+                            ارســال
                         </button>
                     </div>
                 </form>
