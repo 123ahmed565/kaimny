@@ -191,16 +191,16 @@ toastr.options = {
     hideMethod: "fadeOut",
 };
 
-    $(".addToCart").click(function () {
-    toastr.success("تم الاضافة الى السلة");
-    });
+$(".addToCart").click(function () {
+toastr.success("تم الاضافة الى السلة");
+});
 
-    $(".addToHeart").click(function () {
-    toastr.success("تم الاضافة الى المفضلة");
-    });
+$(".addToHeart").click(function () {
+toastr.success("تم الاضافة الى المفضلة");
+});
 
-    $(".delete-this").click(function () {
-    toastr.success("Delete cart");
-    });
+$(".delete-this").click(function () {
+toastr.success("Delete cart");
+});
 
 
