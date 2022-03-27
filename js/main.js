@@ -171,6 +171,27 @@ $(document).ready(function () {
     });
 });
 
+// this for show area when select city modal shipping
+$(document).on("change", ".select-this", function () {
+    document.getElementById("area-select").style.display = "block";
+});
+
+// this for page payemnt
+$(document).ready(function () {
+    $(document).on("click", ".cash-payment", function () {
+        //  remove any style for this class
+            $('.cash-payment').removeClass('clickable');
+        // remove any selected input radio
+        $("cash-payment").prop("checked",false);
+        // add css style class
+        $(this).addClass('clickable');
+        // make input checked 
+        $(this).find('input:radio').each(function(){
+        $(this).prop("checked",true);
+        });
+    });
+    });
+
 
 // Start Taostr js to alert
 toastr.options = {

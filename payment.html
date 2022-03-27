@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/style-rtl.css">
-    <title>Kaimny | Cart</title>
+    <title>Kaimny | Payment</title>
 </head>
 
 <body>
@@ -152,71 +152,87 @@
     </nav>
     <!--end header  -->
 
-    <!-- start cart -->
-    <div class="cart">
+
+    <!-- start payment -->
+    <div class="payment">
         <div class="container">
-            <div class="cart-section d-flex justify-content-between">
-                <h3 class="mt-4 textCart">عربة التسوق الخاصة بي</h3>
-                <button type="button" class="remove-button btn-danger mt-3"> <i class="fas fa-trash m-1 text-white"></i>
-                    حذف الكل
-                </button>
+
+            <div class="content-steps">
+                <ul class="progress-timeline">
+                    <li class="active">الشحـــن</li>
+                    <li class="active">الدفـــــع</li>
+                    <li>تــــم</li>
+                </ul>
             </div>
-            <div class="box-cart 1 mt-4 delete-cart 1" alt="1">
-                <div class="row">
-                    <div class="col-6 col-md-4">
-                        <div class="cart-img mt-2">
-                            <img src="./images/categoriesImages/cat1.jpg" alt="image cart" loading="lazy">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-8">
-                        <div class="content-swiper bg-white mt-5">
-                            <!-- <p class="text-uppercase m-0 p-0 name-mobile">برجر</p> -->
-                            <h3>برجر</h3>
-                            <p class="text-truncate"> بيج تيستي يقدم مع بطاطس وكولا وصوص تيستى </p>
-                            <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <p class="price-swiper m-0 p-0">100,00 EGP</p>
+
+            <div class="row">
+                <div class="col-md-5 col-sm-12 shadow-sm ">
+                    <h2 class="text-upperacse">عربة التسوق الخاصة بي</h2>
+                    <div class="box-shipping-product">
+                        <div class="row">
+                            <div class="col-4 col-md-4">
+                                <img src="./images/categoriesImages/cat1.jpg" class="img-responsive"
+                                    alt="image shipping" loading="lazy">
+                            </div>
+                            <div class="col-8 col-md-8">
+                                <p class="name-mobile m-0 p-0">برجر</p>
+                                <p class="text">بيج تيستى يقدم مع بطاطس والكولا</p>
+                                <p class="price-swiper m-0 p-0 fw-bold">100.00 جنيه</p>
+
+                                <div class="item-shipping d-flex justify-content-between mt-3">
+                                    <p class="text-dark">الكمية:</p>
+                                    <p class="text-dark">1</p>
                                 </div>
-                                <div class="col-12 col-md-6">
-                                    <p class="text-decoration-line-through fw-bold">80,00 EGP</p>
+
+                                <div class="shipping-price d-flex justify-content-between">
+                                    <p class="text-dark">الشحن:</p>
+                                    <p class="text-dark fw-bold">50.00 جنيه</p>
                                 </div>
-                                <div class="col-12 col-md-12 d-flex">
-                                    <i class="fas fa-star text-blue"></i>
-                                    <i class="fas fa-star text-blue"></i>
-                                    <i class="fas fa-star text-blue"></i>
-                                    <i class="far fa-star text-blue"></i>
-                                    <i class="far fa-star text-blue"></i>
+
+                                <div class="grand-total d-flex justify-content-between">
+                                    <p class="text-dark">المجموع الكلى:</p>
+                                    <p class="text-dark text-nowrap fw-bold">150.00 جنيه</p>
                                 </div>
                             </div>
-
-                            <form action="">
-                                <div class="row">
-                                    <div class="col-12 col-md-6 d-flex mt-3">
-                                        <label for="" class="mt-3">الكمية:</label>
-                                        <input type="number" min="1" max="10" class="quantity-form w-25 mt-2" placeholder="qty">
-                                    </div>
-                                    <div class="col-12 col-md-6 align-remove mt-5">
-                                        <i class="fa fa-trash"></i>
-                                        <span class="delete-this fw-bolder">حذف</span>
-                                    </div>
-                                </div>
-                            </form>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="total-price mt-4 border-top p-3">
-                <div class="small-total-price d-flex justify-content-between">
-                    <h3 class="text-uppercase fa-2x allPrice">ألاجمالى</h3>
-                    <p class="text-uppercase fa-2x pricee text-dark mt-2">100,00 جنية</p>
+                <div class="col-md-7 col-sm-12 shadow-sm secondPart">
+
+                    <div class="box-to-box-address shadow-sm p-2">
+                        <h2 class="text-nowrap">شحن الى عنوانى</h2>
+                        <form action="" class="d-flex">
+                              <label for="html">الشرقية - بلبيس - شارع 21 - صبحي فهمي - عمارة: 123 - ط
+                                الرقم: 1 - شقة رقم 7 التفاصيل: 21 ش صبحى فهمى ارض الجولف</label>
+                        </form>
+                    </div>
+
+                    <p class="mt-4 text-black fw-bold">طريقة الدفع<br>
+                        <!-- <span class="fw-normal">how would you like to pay ?</span> -->
+                    </p>
+
+                    <form action="#">
+                        <div class="all">
+                            <div
+                                class="cash-payment  d-flex justify-content-between align-items-center mb-4 p-1 shadow-sm">
+                                <div class="check d-flex">
+                                      <input type="radio" id="adrress" name="addresses" value="check-address">
+                                      <label for="html">الدفع عند التسليم</label>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="./done.html">
+                            <button type="submit" class="btn w-100 mb-2 fw-bold">تقديم الطلب</button>
+                        </a>
+                    </form>
+
                 </div>
             </div>
-            <a href="./shipping.html">
-                <button class="btn text-uppercase w-75 mt-4 fw-bold mx-auto d-block">الدفع</button>
-            </a>
+
         </div>
     </div>
-    <!-- end cart -->
+    <!-- end payment -->
+
 
     <!-- start footer -->
     <div class="footer p-3 mt-5">
@@ -399,7 +415,6 @@
             </div>
         </div>
     </div>
-
 
 </body>
 

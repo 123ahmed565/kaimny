@@ -84,7 +84,7 @@ a:hover {
 
 .btn:hover{
     border: none;
-    background-color: var(--primary);
+    background-color: black !important;
     color: white;
     border-radius: 10px;
     padding: 10px 20px;
@@ -1298,3 +1298,310 @@ cursor: pointer;
     }
 }
 /* end about us */
+
+/* start cart */
+.box-cart{
+    padding: 10px;
+    border: 1px solid #CED5E1;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    height: 288px;
+    cursor: pointer;
+}
+
+.remove-button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: .5s all ease-out;
+}
+
+.cart-img img{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.align-remove{
+    text-align: left;
+    cursor: pointer;
+}
+
+.total-price{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #dad8d9;
+}
+
+@media (max-width:768px) {
+    .box-cart{
+        padding: 10px;
+    }
+    .box-cart:hover{
+        transform: none;
+    }
+    .cart-img img{
+        width: 100%;
+        height: 128px;
+        border-radius: 5px;
+    }
+    .textCart{
+        font-size: 18px;
+    }
+    .remove-button{
+        padding: 10px 10px;
+    }
+    .content-swiper{
+        margin: 0 !important;
+        height: 145px;
+    }
+    .quantity-form{
+        width: 100% !important;
+    }
+    .align-remove{
+        margin: 0px !important;
+    }
+    .allPrice{
+        font-size: 23px;
+        margin-top: 15px;
+    }
+    .pricee{
+        font-size: 23px;
+    }
+}
+/* end cart */
+
+
+/* start shipping */
+.shipping{
+    padding: 30px;
+    margin: auto;
+}
+.progress-timeline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    counter-reset: step;
+}
+
+.progress-timeline li {
+    width: 33.3%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.progress-timeline li::after {
+    content: counter(step);
+    counter-increment: step;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border: 2px solid var(--colorText);
+    font-size: 14pt;
+    color: #000;
+    font-weight: bold;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+.progress-timeline li::before { 
+    content: "";
+    position: absolute;
+    bottom: 45px;
+    width: 100% !important;
+    border-right: 3px dotted var(--colorText);
+    left: 50%;
+    height: 4px;
+    z-index: -1;
+    background-color: #CED5E1;
+    -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.progress-timeline li.active {
+    color: var(--colorText);
+}
+
+.progress-timeline li.active:before {
+    background-color: var(--colorText);
+    -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.progress-timeline li.active::after {
+    border: 3px dotted var(--colorText);
+    background-color: var(--colorText);
+    color: #fff;
+}
+
+input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid #bbbbbb;
+    background-color: #e7e6e7;
+    border-radius: 50%;
+}
+
+  /* appearance for checked radiobutton */
+input[type="radio"]:checked {
+    background-color: var(--colorText);
+    border-radius: 50%;
+}
+
+.button-new-address{
+    text-align: left;
+}
+
+.box-shipping-product img{
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+}
+
+.shipping-radio-label{
+    margin-right: 5px;
+}
+
+@media (max-width:768px) {
+    .secondPart{
+        margin-top: 25px;
+    }
+    .progress-timeline li {
+        width: 33.3%;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: capitalize;
+        position: relative;
+    }
+    .progress-timeline li::after {
+        content: counter(step);
+        counter-increment: step;
+        background-color: #fff;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border: 2px solid var(--colorText);
+        font-size: 14pt;
+        color: #000;
+        font-weight: bold;
+        display: block;
+        margin: 30px auto;
+        border-radius: 50%;
+    }
+    input[type="radio"] {
+        /* remove standard background appearance */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        /* create custom radiobutton appearance */
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        padding: 4px;
+        /* background-color only for content */
+        background-clip: content-box;
+        border: 2px solid #bbbbbb;
+        background-color: #e7e6e7;
+        border-radius: 50%;
+    }
+    
+    /* appearance for checked radiobutton */
+    input[type="radio"]:checked {
+        background-color: var(--colorText);
+        border-radius: 50%;
+    }
+    .box-shipping-product img{
+        width: 100%;
+        height: 80px;
+        border-radius: 4px;
+    }
+}
+
+/* end shipping */
+
+/* start payment */
+.payment{
+    padding: 30px;
+    margin: auto;
+}
+
+.cash-payment{
+    height: 100px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.payment input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid #bbbbbb;
+    background-color: #e7e6e7;
+    border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+.payment input[type="radio"]:checked {
+    background-color: var(--colorText);
+    border-radius: 50%;
+}
+
+.clickable{
+    background-color: #e7e6e7;
+    transition: .4s all ease-in-out;
+    border-radius: 5px;
+}
+
+.spacing-all{
+    margin-right: 15px;
+}
+
+@media (max-width:768px) {
+    .payment{
+        padding: 10px;
+        margin: auto;
+    }
+    .via-bank{
+        font-size: 11px;
+    }
+    .mobilee{
+        display: block !important;
+    }
+    .spacing-all{
+        margin-right: 0px;
+    }
+    .image-ahly{
+        width: 110px;
+        height: 70px;
+    }
+    .wallet{
+        display: block !important;
+    }
+    .wallet img{
+        width: 50px;
+        height: 50px;
+    }
+}
+/* end payment */
