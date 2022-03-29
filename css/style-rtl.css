@@ -1146,6 +1146,7 @@ cursor: pointer;
     padding: 22px;
     margin-right: -60px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .nav-tabs .nav-link{

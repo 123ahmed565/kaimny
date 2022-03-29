@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/style-rtl.css">
     <title>Kaimny | Product details</title>
@@ -412,7 +412,7 @@
                                             alt="image reveiew" loading="lazy">
                                     </div>
                                 </div>
-                                <div class="col-8 col-md-4 desc-review">
+                                <div class="col-8 col-md-4 desc-review" data-bs-toggle="modal" data-bs-target="#exampleModal-8">
                                     <div class="clear-fix">
                                         <p class="float-end text-black">احمد كمال</p>
                                         <div class="d-flex float-start">
@@ -445,7 +445,8 @@
             <div class="row">
                 <div class="col-12 col-md-3">
                     <h1 class="text-white">Logo</h1>
-                    <p class="text-white textSmallFooter">خدمتنا اننا نقدر نقدملك كل احتياجاتك لحد عندك وكل اللى عليك تقييمك مش اكتر</p>
+                    <p class="text-white textSmallFooter">خدمتنا اننا نقدر نقدملك كل احتياجاتك لحد عندك وكل اللى عليك
+                        تقييمك مش اكتر</p>
                     <div class="social-icons mx-auto mx-md-0">
                         <a href="#"><i class="fab fa-facebook m-2"></i></a>
                         <a href="#"><i class="fab fa-twitter m-2"></i></a>
@@ -632,36 +633,36 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <!-- <form> -->
-                    <div class="modal-body">
-                        <!-- image -->
-                        <img class="modalImage" src="https://m.media-amazon.com/images/I/51MW5l61nPL._AC_.jpg"
-                            alt="category image" loading="lazy">
+                <div class="modal-body">
+                    <!-- image -->
+                    <img class="modalImage" src="https://m.media-amazon.com/images/I/51MW5l61nPL._AC_.jpg"
+                        alt="category image" loading="lazy">
 
-                        <!-- title  -->
-                        <div class="title border-bottom">
-                            <h5 class="fw-bold mt-4">فلتر 7 مراحل RO (قسط)</h5>
-                        </div>
-
-                        <!-- description -->
-                        <h5 class="mt-2">الوصــف</h5>
-                        <p class="border-bottom mt-2"> يتم التركيب بمقدم 750 جنية والباقى على 10 شهوركل شهر 200 جنية</p>
-
-                        <!-- price & quantity -->
-                        <div class="priceAndQuantity d-flex justify-content-between">
-                            <p class="mt-3 fw-bold fs-5">السعر <span>200 جنية</span></p>
-                            <div class="quantity d-flex mt-2">
-                                <i class="fas fa-plus m-2 plus"></i>
-                                <p class="mt-2 fw-bold">1</p>
-                                <i class="fas fa-minus m-2 minus"></i>
-                            </div>
-                        </div>
-
-                        <!-- button add to cart -->
-                        <button class="mx-auto d-block btn">
-                            أضـــف الى العربة
-                        </button>
-
+                    <!-- title  -->
+                    <div class="title border-bottom">
+                        <h5 class="fw-bold mt-4">فلتر 7 مراحل RO (قسط)</h5>
                     </div>
+
+                    <!-- description -->
+                    <h5 class="mt-2">الوصــف</h5>
+                    <p class="border-bottom mt-2"> يتم التركيب بمقدم 750 جنية والباقى على 10 شهوركل شهر 200 جنية</p>
+
+                    <!-- price & quantity -->
+                    <div class="priceAndQuantity d-flex justify-content-between">
+                        <p class="mt-3 fw-bold fs-5">السعر <span>200 جنية</span></p>
+                        <div class="quantity d-flex mt-2">
+                            <i class="fas fa-plus m-2 plus"></i>
+                            <p class="mt-2 fw-bold">1</p>
+                            <i class="fas fa-minus m-2 minus"></i>
+                        </div>
+                    </div>
+
+                    <!-- button add to cart -->
+                    <button class="mx-auto d-block btn">
+                        أضـــف الى العربة
+                    </button>
+
+                </div>
                 <!-- </form> -->
                 <div class="modal-footer">
                     <button data-bs-dismiss="modal" class="btn pe-3 ps-3">
@@ -717,6 +718,109 @@
                 <div class="modal-footer">
                     <button data-bs-dismiss="modal" class="btn pe-3 ps-3">
                         اغــلاق
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start modal reveiw for every card in testimonials -->
+    <div class="modal fade" id="exampleModal-8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> التقييم الشخصــى</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <!-- image -->
+                        <img class="reviewModalTest mx-auto d-block" src="./images/teamMembers/team-1.jpg"
+                            alt="reviews image" loading="lazy">
+                        <!-- name -->
+                        <p class="text-center fw-bold mt-2 fs-5">احمد كمال</p>
+                        <!-- stars -->
+                        <ul class="d-flex justify-content-center align-items-center p-0">
+                            <li>
+                                <i class="fas fa-star text-blue"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star text-blue"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star text-blue"></i>
+                            </li>
+                            <li>
+                                <i class="far fa-star text-blue"></i>
+                            </li>
+                            <li>
+                                <i class="far fa-star text-blue"></i>
+                            </li>
+                        </ul>
+
+                        <!-- box reveiwes -->
+                        <div class="boxReview d-flex mb-3">
+                            <img class="reviewModalTest2" src="./images/teamMembers/team-2.jpg" alt="reviews image"
+                                loading="lazy">
+                            <div class="d-block m-3">
+                                <div class="d-flex">
+                                    <p class="fw-bold">على كامل</p>
+                                    <div class="d-flex me-5 mt-1">
+                                        <i class="fas fa-star text-blue"></i>
+                                        <i class="fas fa-star text-blue"></i>
+                                        <i class="far fa-star text-blue"></i>
+                                        <i class="far fa-star text-blue"></i>
+                                        <i class="far fa-star text-blue"></i>
+                                    </div>
+                                </div>
+                                <p>شخص محترم جدا</p>
+                            </div>
+                        </div>
+
+                        <!-- box reveiwes -->
+                        <div class="boxReview d-flex mb-3">
+                            <img class="reviewModalTest2" src="./images/teamMembers/team-3.jpg" alt="reviews image"
+                                loading="lazy">
+                            <div class="d-block m-3">
+                                <div class="d-flex">
+                                    <p class="fw-bold">وليد صلاح</p>
+                                    <div class="d-flex me-5 mt-1">
+                                        <i class="fas fa-star text-blue"></i>
+                                        <i class="fas fa-star text-blue"></i>
+                                        <i class="far fa-star text-blue"></i>
+                                        <i class="far fa-star text-blue"></i>
+                                        <i class="far fa-star text-blue"></i>
+                                    </div>
+                                </div>
+                                <p>شخص محترم جدا</p>
+                            </div>
+                        </div>
+
+                        <!-- box reveiwes -->
+                        <div class="boxReview d-flex mb-3">
+                            <img class="reviewModalTest2" src="./images/teamMembers/team-4.jpg" alt="reviews image"
+                                loading="lazy">
+                            <div class="d-block m-3">
+                                <div class="d-flex">
+                                    <p class="fw-bold">عباس احمد</p>
+                                    <div class="d-flex me-5 mt-1">
+                                        <i class="fas fa-star text-blue"></i>
+                                        <i class="fas fa-star text-blue"></i>
+                                        <i class="far fa-star text-blue"></i>
+                                        <i class="far fa-star text-blue"></i>
+                                        <i class="far fa-star text-blue"></i>
+                                    </div>
+                                </div>
+                                <p>شخص محترم جدا</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </form>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" type="submit" class="btn pe-3 ps-3">
+                        اغلاق
                     </button>
                 </div>
             </div>
