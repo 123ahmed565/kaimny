@@ -581,7 +581,7 @@ input[type=submit]:hover {
     position: relative;
     background-size: cover;
     background-position: 50% 50%;
-    background-image: url("../images/slider/bg-hero.jpg");
+    background-image: url("../images/slider/document-marketing-strategy-business-concept.jpg");
 }
 
 .big-image .overlay {
@@ -597,16 +597,6 @@ input[type=submit]:hover {
     justify-content: center;
     flex-direction: column;
 }
-
-/* .big-image .overlay .firstText{
-    font-size: 20px;
-    position: relative;
-    line-height: 20px;
-    bottom: 10%;
-    font-weight: bold;
-    color: white !important;
-    text-align: center !important;
-} */
 
 .big-image .overlay .bigText {
     font-size: 50px;
@@ -829,6 +819,7 @@ input[type=submit]:hover {
 .cardTeams{
     text-align: center;
     background-color: white;
+    cursor: pointer;
 }
 .cardTeams img{
     width: 200px;
@@ -1974,3 +1965,37 @@ font-weight: 500;
     }
 }
 /* end favourite */
+
+/* start best places */
+.places{
+    margin-top: 70px;
+}
+
+.bestPlaces{
+    /* background-color: var(--colorText); */
+    margin-top: 30px;
+    height: 170px;
+}
+
+.bestPlaces .swiper-slide img {
+    width: 120px;
+    height: 120px;
+    padding: 3px;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin-top: 28px;
+}
+
+@media (max-width:768px) {
+    .bestPlaces .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    .bestPlaces .swiper-slide img {
+        width: 120px;
+        height: 120px;
+        border: 3px solid white;
+    }
+}
+
+/* end best places */
