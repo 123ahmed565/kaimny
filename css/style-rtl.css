@@ -751,6 +751,20 @@ input[type=submit]:hover {
     padding: 3px;
 }
 
+.Panner{
+    width: 80%;
+    height: 150px;
+    background-color: #dedee9;
+    margin-top: 20px;
+}
+
+.panner2{
+    width: 100%;
+    height: 350px;
+    background-color: #dedee9;
+    margin-top: 20px;
+}
+
 @media (max-width:768px) {
     .categoriesHome{
         margin-top:  30px;
@@ -759,6 +773,15 @@ input[type=submit]:hover {
         width: 120px;
         height: 120px;
         border-radius: 50%;
+    }
+    .Panner{
+        width: 100%;
+        height: 150px;
+        background-color: #dedee9;
+        margin-top: 20px;
+    }
+    .panner2{
+        display: none;
     }
 }
 /* end categories */
