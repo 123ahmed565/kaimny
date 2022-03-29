@@ -45,7 +45,7 @@ document.addEventListener("scroll", (e) => {
 
 // swiper categories
 var swiper = new Swiper(".mySwiper2", {
-    slidesPerView: 6.5,
+    slidesPerView: 5.5,
     spaceBetween: 5,
     freeMode: true,
     pagination: {
@@ -54,7 +54,7 @@ var swiper = new Swiper(".mySwiper2", {
     },
     breakpoints:{
         0: {
-            slidesPerView: 3.5,
+            slidesPerView: 2.5,
             spaceBetween: 5,
             slideToClickedSlide: true,
         },
@@ -63,7 +63,7 @@ var swiper = new Swiper(".mySwiper2", {
             spaceBetween: 20,
         },
         1000: {
-            slidesPerView: 6.5,
+            slidesPerView: 5.5,
             spaceBetween: 10,
         },
     }
