@@ -718,10 +718,21 @@ input[type=submit]:hover {
 }
 /* end double phones */
 
+/* start how works */
+.howWorks{
+    text-align: center;
+}
+
+.imageWorks{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+/* end how works */
+
 /* start categories */
 .categoriesHome{
     margin-top: 400px;
-    /* margin-top: 30px; */
 }
 
 .mySwiper2 .swiper-slide{
@@ -740,7 +751,6 @@ input[type=submit]:hover {
 
 @media (max-width:768px) {
     .categoriesHome{
-        /* margin-top: 225px; */
         margin-top:  30px;
     }
     .sectionCategories img{
