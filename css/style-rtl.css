@@ -1792,3 +1792,134 @@ font-weight: 500;
     }
 }
 /* end order-details */
+
+
+/* start favourite */
+.btn-card {
+    background: none !important;
+    border: 1px solid var(--colorText);
+    border-radius: 30px;
+}
+
+.btn-card:hover{
+    background-color: var(--colorText) !important;
+    transition: .4s all ease-out;
+    color: white !important;
+} 
+
+.text-desc{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+            line-clamp: 1; 
+    -webkit-box-orient: vertical;
+    text-align: center;
+    font-weight: 800;
+}
+
+.box-shadow{
+    position: relative;
+    padding: 5px;
+}
+
+.box-shadow  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 280px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.box-shadow .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.box-shadow:hover .image {
+    opacity: 0.3;
+}
+
+.box-shadow:hover .middle {
+    opacity: 1;
+}
+
+.box-shadow .icons .add-to-cart{
+    background-color: var(--colorText);
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    color: white !important;
+    cursor: pointer;
+}
+
+.box-shadow .icons .add-to-trash{
+    background-color: rgb(216, 15, 15);
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    color: white !important;
+    cursor: pointer;
+}
+
+.box-shadow .icons-mobile{
+    position: absolute;
+    top: 55%;
+    right: 8%;
+}
+
+.box-shadow .icons-mobile .add-to-cart{
+    background-color: var(--colorText);
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    color: white !important; 
+}
+
+.box-shadow .icons-mobile .add-to-trash{
+    background-color: rgb(216, 15, 15);
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    color: white !important;
+}
+@media (max-width:768px) {
+    .box-shadow{
+        position: relative;
+        /* margin: 1 !important; */
+    }
+    .box-shadow .middle {
+        display: none;
+    }
+    .box-shadow:hover .image {
+        opacity: 1 !important;
+    }
+    .box-shadow .icons-mobile{
+        position: absolue;
+        /* display: flex; */
+        top: 5% !important;
+        right: 80% !important;
+    }
+    .box-shadow  .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: 239px !important;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+}
+/* end favourite */
