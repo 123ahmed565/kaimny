@@ -429,7 +429,7 @@ input[type=submit]:hover {
 
 @media (min-width:991px) {
     .navbar-nav{
-        margin-right: 17%;
+        margin-right: 12%;
     }
     .fa-bars{
         display: none;
