@@ -79,6 +79,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./ourteam.html">فريقنا</a>
                         </li>
+                        <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal-10"
+                            style="cursor: pointer;">
+                            <a class="nav-link">اضــافة حجز</a>
+                        </li>
                     </ul>
 
                     <div class="icons">
@@ -232,7 +236,8 @@
             <div class="row">
                 <div class="col-12 col-md-3">
                     <h1 class="text-white">Logo</h1>
-                    <p class="text-white textSmallFooter">خدمتنا اننا نقدر نقدملك كل احتياجاتك لحد عندك وكل اللى عليك تقييمك مش اكتر</p>
+                    <p class="text-white textSmallFooter">خدمتنا اننا نقدر نقدملك كل احتياجاتك لحد عندك وكل اللى عليك
+                        تقييمك مش اكتر</p>
                     <div class="social-icons mx-auto mx-md-0">
                         <a href="#"><i class="fab fa-facebook m-2"></i></a>
                         <a href="#"><i class="fab fa-twitter m-2"></i></a>
@@ -457,13 +462,13 @@
                         <label for="Address Details">أضافة اتجاهات اخري:</label>
                         <input type="text" name="">
 
-                        <label for="Address Details">  رقم هاتف (أساسى):</label>
+                        <label for="Address Details"> رقم هاتف (أساسى):</label>
                         <input type="number" name="">
 
-                        <label for="Address Details">  رقم هاتف (أختيارى):</label>
+                        <label for="Address Details"> رقم هاتف (أختيارى):</label>
                         <input type="number" name="">
 
-                        <label for="Address Details">  علامة مميزة (اختيارى):</label>
+                        <label for="Address Details"> علامة مميزة (اختيارى):</label>
                         <input type="text" name="">
 
                     </div>
@@ -477,6 +482,110 @@
         </div>
     </div>
 
+    <!-- start modal add a brand in website -->
+    <div class="modal fade" id="exampleModal-10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> أضافة </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                    <div class="modal-body">
+
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <input type="text" placeholder="اســـم">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" placeholder="وصــــف مبسط">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <input type="text" placeholder="وصـــف">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" placeholder=" فيس بوك ليك">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 mx-auto d-block">
+                            <input type="text" placeholder=" العنـــوان">
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <select>
+                                    <option disabled selected value="">اختر المنطقة</option>
+                                    <option value="">القاهرة</option>
+                                    <option value="">الاسكندرية</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <select>
+                                    <option disabled selected value="">اختر تصــنيف المتجر</option>
+                                    <option value="">متجر 1</option>
+                                    <option value="">متجر 2</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <select>
+                                    <option disabled selected value="">حالة المتجر</option>
+                                    <option value=""> 1</option>
+                                    <option value=""> 2</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6 d-flex justify-content-start align-items-center">
+                                <input type="radio" id="html" name="fav_language" value="HTML">
+                                 <label for="html">قابل للحجز</label>
+                                 <input type="radio" id="css" name="fav_language" value="CSS">
+                                 <label for="css">غير قابل للحجز</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="password" placeholder="Passowrd">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <label for="">اللوجو</label>
+                                <input type="file" placeholder="Email">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="number" placeholder="رقم الهاتف">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <input type="text" placeholder="وقت التوصيل بالدقايق">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" placeholder=" قيمة التوصيل">
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" type="submit" class="btn pe-3 ps-3">
+                        حفظ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
