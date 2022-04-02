@@ -333,7 +333,7 @@
                                 <p>242 طريق الجيش مصطفى كامل , سيدى جابر, الاسكندرية</p>
                             </div>
                             <!-- time of close & open -->
-                            <div class="timeAndOpen">
+                            <div class="timeAndOpen border-bottom w-25 mt-3">
                                 <div class="d-flex">
                                     <p>وقت الفتح:</p>
                                     &nbsp;&nbsp;
@@ -343,6 +343,29 @@
                                     <p>وقت الغلق:</p>
                                     &nbsp;&nbsp;
                                     <p>5:00 مساءا</p>
+                                </div>
+                            </div>
+                            <!-- textarea of reversation -->
+                            <div class="reversation w-25">
+                                <!-- reveiws -->
+                                <div class="reveiws text-center d-flex justify-content-between">
+                                    <p>التقييم : <span class="text-black fw-bold">0</span> </p>
+                                    <span>
+                                        <i class="far fa-star text-blue"></i>
+                                        <i class="far fa-star text-blue"></i>
+                                        <i class="far fa-star text-blue"></i>
+                                        <i class="far fa-star text-blue"></i>
+                                        <i class="far fa-star text-blue"></i>
+                                    </span>
+                                </div>
+                                <!-- reversation -->
+                                <div class="revsers">
+                                    <p class="fw-bold text-black">تفاصيل الحجز</p>
+                                    <textarea class="m-0 p-1" cols="30" rows="4" placeholder="تفاصيل الحجز"></textarea>
+                                    <div class="text-center">
+                                        <button data-bs-toggle="modal" data-bs-target="#exampleModal-9" class="btn">احجز الأن</button>
+                                        <button class="btn"> قيم الأن</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -412,7 +435,8 @@
                                             alt="image reveiew" loading="lazy">
                                     </div>
                                 </div>
-                                <div class="col-8 col-md-4 desc-review" data-bs-toggle="modal" data-bs-target="#exampleModal-8">
+                                <div class="col-8 col-md-4 desc-review" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal-8">
                                     <div class="clear-fix">
                                         <p class="float-end text-black">احمد كمال</p>
                                         <div class="d-flex float-start">
@@ -821,6 +845,28 @@
                 <div class="modal-footer">
                     <button data-bs-dismiss="modal" type="submit" class="btn pe-3 ps-3">
                         اغلاق
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start modal of datetime reversation -->
+    <div class="modal fade" id="exampleModal-9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> التقييم الشخصــى</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <input type="datetime-local" name="" id="">
+                    </div>
+                </form>
+                <div class="modal-footer">
+                    <button type="submit" class="btn pe-3 ps-3">
+                    <a href="./reversation.html">                        حجز</a>                     
                     </button>
                 </div>
             </div>

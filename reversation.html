@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="icon" href="./images/logo/logo2.png" type="image/x-icon" />
+    <meta property="og:image" content="./images/logo/logo2.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/style-rtl.css">
+    <title>Kaimny | reversation</title>
+</head>
+
+<body>
+
+    <!-- start preloader -->
+    <div class="preloaders">
+        <div class="loaders"></div>
+    </div>
+    <!-- end preloader -->
+
+    <!-- start scroll to top -->
+    <button class="scroll-to-top"><i class="fas fa-hand-point-up text-white shadow-lg"></i></button>
+    <!-- end scroll to top -->
+
+    <!-- start header -->
+    <nav class="navbar navbar-expand-sm shadow-sm bg-white sticky-top">
+        <div class="container">
+            <i class="fas fa-bars  fa-2x mt-2 mr-3" data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
+            <a href="./index.html"> <img class="logo-navbar shadow-lg" src="" style="border-radius: 50%;" width="80"
+                    height="80" alt="image logo" loading="lazy"> </a>
+            <div class="offcanvas offcanvas-end" id="demo">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title"><a href="./index.html"> <img src="" width="80" height="80"
+                                alt="image menu" loading="lazy"></a></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body col justify-content-md-between">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about-us.html">من نحن</a>
+                        </li>
+                        <div class="dropdown">
+                            <li class="nav-item d-none d-sm-block d-flex" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link d-flex chevron-active" href="#">
+                                    <span class="d-flex">الأقسام<i class="chevron-i fa fa-chevron-down d-flex mt-1 m-1"
+                                            style="display: block !important;"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <ul class="dropdown-menu m-0 p-0" aria-labelledby="dropdownMenuButton1">
+                                <li>
+                                    <a class="dropdown-item hover-it" href="./categories.html"> أكل</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item hover-it" href="./categories.html">عيادات</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item hover-it" href="./categories.html">محاميين</a>
+                                </li>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./testimonails.html">أفضل العملاء</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact-us.html">أتصل بنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ourteam.html">فريقنا</a>
+                        </li>
+                    </ul>
+
+                    <div class="icons">
+                        <!-- start modal user -->
+                        <button type="button" class="btn-login mt-3 mt-md-0" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                            <i class="fas fa-user text-white"></i>
+                        </button>
+
+                        <!-- button cart -->
+                        <a href="./cart.html">
+                            <button class="icon-top">
+                                <i class="fa fa-cart-plus text-white"></i>
+                                <span class="badge-cart">3</span>
+                            </button>
+                        </a>
+
+                        <!-- button heart -->
+                        <a href="./favourite.html">
+                            <button class="icon-top">
+                                <i class="far fa-heart text-white"></i>
+                                <!-- <span class="badge-heart">3</span> -->
+                            </button>
+                        </a>
+
+                        <!-- start search modal -->
+                        <a href="#search">
+                            <i class="fas fa-search text-white m-2"></i>
+                        </a>
+                        <div id="search-box">
+                            <div class="container">
+                                <a class="close" href="#close"></a>
+                                <div class="search-main">
+                                    <div class="search-inner">
+                                        <input type="text" id="inputSearch" name="firstname"
+                                            placeholder="أبحث هنـــــــا...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- start dropdown profile -->
+                        <div class="dropdown for-mobile-none">
+                            <button class="dropbtn">
+                                <img src="https://elbarkaa.com/assets/website/images/elbaraka-logo%20white%20.png"
+                                    alt="profile image" loading="lazy" class="image-profile">
+                            </button>
+                            <div class="dropdown-content" style="top:30px;left:20px;min-width:200px;border-radius:5px">
+                                <img class="mx-auto d-block mt-2"
+                                    src="https://elbarkaa.com/assets/website/images/elbaraka-logo%20white%20.png"
+                                    width="80" height="80" alt="image profile" style="border-radius:50%;">
+                                <p class="text-center nameProfile mt-2">Ahmed Serag</p>
+                                <p class="textMenu text-white m-2">
+                                    <i class="fa fa-info-circle m-1"></i>
+                                    About Us
+                                </p>
+                                <p class="textMenu text-white m-2">
+                                    <i class="fa fa-phone-alt m-1"></i>
+                                    Contact Us
+                                </p>
+                                <p class="textMenu text-white m-2">
+                                    <i class="fa fa-cog m-1"></i>
+                                    Settings
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--end header  -->
+
+    <!-- start reversation -->
+    <div class="revsesationPage">
+        <div class="container">
+            <!-- tabs -->
+            <div class="Tabs mt-3">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                            type="button" role="tab" aria-controls="home" aria-selected="true">طلبـــات الحجوزات</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                            type="button" role="tab" aria-controls="profile" aria-selected="false">طلبـــــات
+                            المتاجر</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <!-- first tab information -->
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="w-25 shadow-sm p-1 reversebox">
+                            <!-- order number -->
+                            <div class="d-flex justify-content-between">
+                                <p class="fw-bold">رقم الطلب</p>
+                                <p>177</p>
+                            </div>
+                            <!-- date -->
+                            <div class="d-flex justify-content-between">
+                                <p class="fw-bold"> التاريـــخ</p>
+                                <p>18:57 مساءا</p>
+                            </div>
+                            <!-- status -->
+                            <div class="d-flex justify-content-between">
+                                <p class="fw-bold"> عيادة</p>
+                                <p>دكتور محمد مجدى شكرى </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second tab review product -->
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="w-25 shadow-sm p-1 reversebox">
+                            <!-- order number -->
+                            <div class="d-flex justify-content-between">
+                                <p class="fw-bold">رقم الطلب</p>
+                                <p>177</p>
+                            </div>
+                            <!-- date -->
+                            <div class="d-flex justify-content-between">
+                                <p class="fw-bold"> التاريـــخ</p>
+                                <p>18:57 مساءا</p>
+                            </div>
+                            <!-- status -->
+                            <div class="d-flex justify-content-between">
+                                <p class="fw-bold"> الحالة</p>
+                                <p>مغـــلق </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end reversation -->
+
+    <!-- start footer -->
+    <div class="footer p-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <h1 class="text-white">Logo</h1>
+                    <p class="text-white textSmallFooter">خدمتنا اننا نقدر نقدملك كل احتياجاتك لحد عندك وكل اللى عليك
+                        تقييمك مش اكتر</p>
+                    <div class="social-icons mx-auto mx-md-0">
+                        <a href="#"><i class="fab fa-facebook m-2"></i></a>
+                        <a href="#"><i class="fab fa-twitter m-2"></i></a>
+                        <a href="tel:+201012370014"><i class="fab fa-whatsapp m-2"></i></a>
+                        <a href="#"><i class="fab fa-instagram m-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5 class="textFooter">الشركة</h5>
+                    <p class="textSmallFooter">
+                        <i class="fa fa-chevron-left m-1 iconFooter" style="font-size: 12px;"></i>
+                        <a href="./about-us.html" class="hoverText">من نحن</a>
+                    </p>
+                    <p class="textSmallFooter">
+                        <i class="fa fa-chevron-left m-1 iconFooter" style="font-size: 12px;"></i>
+                        <a href="./contact-us.html" class="hoverText">اتصل بنا</a>
+                    </p>
+                    <p class="textSmallFooter">
+                        <i class="fa fa-chevron-left m-1 iconFooter" style="font-size: 12px;"></i>
+                        <a href="./privacy.html" class="hoverText">سياسة الخصوصية</a>
+                    </p>
+                    <p class="textSmallFooter">
+                        <i class="fa fa-chevron-left m-1 iconFooter" style="font-size: 12px;"></i>
+                        <a href="./terms&conditions.html" class="hoverText">الشروط والاحكام</a>
+                    </p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5 class="textFooter">الاتصال</h5>
+                    <p class="textSmallFooter">
+                        <i class="fa fa-map-marker-alt m-1"></i>
+                        الدقى وسط البلد امام قصر عابدين
+                    </p>
+                    <p class="textSmallFooter">
+                        <i class="fa fa-phone m-1"></i>
+                        <a href="tel:+201155741330">01155741330</a>
+                    </p>
+                    <p class="textSmallFooter">
+                        <i class="fa fa-envelope m-1"></i>
+                        info@example.com
+                    </p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5 class="textFooter">المواعيد</h5>
+                    <h4 class="date">الاحد - الخميس</h4>
+                    <p class="textSmallFooter">9صباحا - 5 مساءا</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+
+    <!-- start  modal register -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">التسجيل</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="recipient-name" placeholder="الاسم بالكامل"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="recipient-name" placeholder="الايميل" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="recipient-name" placeholder="رقم الهاتف"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="recipient-name" placeholder="كلمة السر"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="recipient-name"
+                                placeholder="اعادة كتابة كلمة السر" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn mx-auto d-block w-100">تسجيل الدخول</button>
+                    </div>
+                </form>
+
+                <h6 class="fw-bold text-center">
+                    هل بالفعل ليدك حساب?
+                    <span class="text-primary" data-bs-target="#exampleModal-2" data-bs-toggle="modal"
+                        data-bs-dismiss="modal" style="cursor: pointer;">سجل الأن!</span>
+                </h6>
+            </div>
+        </div>
+    </div>
+
+    <!-- start  modal Login Now -->
+    <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">مرحبا بعودتك!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="الايميل" required>
+                        </div>
+                        <div>
+                            <input type="number" class="form-control" id="recipient-name" placeholder="كلمة السر"
+                                required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn w-100">
+                            سجل الأن
+                        </button>
+                        <span class="text-primary fa-1x" data-bs-target="#exampleModal-3" data-bs-toggle="modal"
+                            data-bs-dismiss="modal" style="cursor: pointer;">نسيت كلمة المرور?</span>
+                    </div>
+                </form>
+
+                <p class="fw-bold text-center text-dark">
+                    يمكنك التسجيل بـ..
+                </p>
+                <ul class="d-flex justify-content-center socail-modal">
+                    <li><button class="btn-facebook m-2"><i class="fab fa-facebook-f text-white"></i>&nbsp;
+                            facebook</button></li>
+                    <li><button class="btn-google m-2 "><i class="fab fa-google text-white"></i>&nbsp; Google
+                            &nbsp;&nbsp;</button>
+                    </li>
+                </ul>
+                <h6 class="text-dark fw-bold text-center">
+                    هل لديك اي حساب?
+                    <span class="text-primary" data-bs-target="#exampleModal" data-bs-toggle="modal"
+                        data-bs-dismiss="modal" style="cursor: pointer;">تسجيل الدخول الأن!</span>
+                </h6>
+            </div>
+        </div>
+    </div>
+
+    <!-- start modal forget-password -->
+    <div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">نسيت كلمة المرور</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="الايميل" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn mx-auto d-block pe-3 ps-3">
+                            ارسال
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

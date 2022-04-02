@@ -1310,6 +1310,9 @@ cursor: pointer;
         transform:none;
         transition: .4s all ease-in-out;
     }
+    .reversation{
+        width: 100% !important;
+    }
 }
 
 /* end page product details */
@@ -2023,3 +2026,20 @@ font-weight: 500;
 }
 
 /* end best places */
+
+/* start revsersationPage */
+.revsesationPage{
+    margin-top: 120px;
+}
+.reversebox{
+    padding: 10px;
+    background: none;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+@media (max-width:768px) {
+    .reversebox{
+        width: 100% !important;
+    }
+}
+/* end reversationPage */
