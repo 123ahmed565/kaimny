@@ -80,8 +80,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./ourteam.html">فريقنا</a>
                         </li>
-                        <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal-10" style="cursor: pointer;">
-                            <a class="nav-link">اضــافة حجز</a>
+                        <li class="nav-item"
+                            style="cursor: pointer;">
+                            <a class="nav-link" href="./add-reserve.html">اضــافة حجز</a>
                         </li>
                     </ul>
 
@@ -159,15 +160,31 @@
     <!-- start slider -->
     <div class="big-image">
         <div class="overlay">
-            <!-- <p class="text-center firstText text-capitalize">food app</p> -->
-            <h1 class="bigText text-capitalize"> <span style="color: var(--colorText);">قيمنى</span> هي أكبر منصة ف
-                الشرق الاوسط والوطن العربى للتقيمات
-            </h1>
+            <div class="row alignemntNewRow">
+                <div class="col-12 col-md-8">
+                    <h1 class="bigText text-capitalize"> <span style="color: var(--colorText);">قيمنى</span> هي أكبر منصة ف
+                        الشرق الاوسط والوطن العربى للتقيمات
+                    </h1>
+                </div>
+                <div class="col-12 col-md-4 searchSlider d-none d-sm-block">
+                    <form action="">
+                        <input type="search" placeholder="أبحث عن مطعمك هنا">
+                        <input type="submit" value="ابحــــــــث" class="w-50 mx-auto d-block">
+                    </form>
+                </div>
+            </div>
+
             <p class="smallText text-capitalize">قم بتنزيل تطبيق قيمنى الآن</p>
             <div class="d-flex">
                 <button class="text-capitalize button-apps shadow-lg">play store</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button class="text-capitalize button-apps shadow-lg">app store</button>
+            </div>
+            <div class="searchMobile d-sm-block d-md-none">
+                <form action="">
+                    <input type="search" placeholder="أبحث عن مطعمك هنا">
+                    <input type="submit" value="ابحــــــــث" class="w-50 mx-auto d-block">
+                </form>
             </div>
         </div>
     </div>
