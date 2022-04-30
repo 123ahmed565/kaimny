@@ -348,6 +348,7 @@ input[type=submit]:hover {
     line-height: 30px;
     font-weight: 500;
     padding: 0.5rem 1rem;
+    text-align: right;
 }
 
 .hover-it:hover{
@@ -2088,3 +2089,9 @@ font-weight: 500;
     }
 }
 /* end page add reversation   */
+
+
+/* dropdown align right*/
+.dropdown-item {
+    text-align: right !important;
+}
