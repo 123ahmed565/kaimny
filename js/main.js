@@ -101,12 +101,12 @@ var swiper = new Swiper(".mySwiper3", {
 });
 
 // swiper page product details
-var swiper = new Swiper(".mySwiper4", {
+var swiper = new Swiper(".mySwiper5", {
     slidesPerView: 3,
-    spaceBetween: 30,
-    freeMode: false,
-    loop: true,
-    direction: "vertical",
+    spaceBetween: 10,
+    // freeMode: false,
+    // loop: true,
+    // direction: "vertical",
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -118,24 +118,24 @@ var swiper = new Swiper(".mySwiper4", {
     breakpoints: {
         0: {
         slidesPerView: 1,
-        spaceBetween: 20,
-        direction: "horizontal",
-        freeMode: false,
+        spaceBetween: 10,
+        // direction: "horizontal",
+        // freeMode: false,
         },
         600: {
         slidesPerView: 2,
-        spaceBetween: 20,
-        direction: "horizontal",
+        spaceBetween: 10,
+        // direction: "horizontal",
         },
         1000: {
         slidesPerView: 5,
-        spaceBetween: 60,
-        direction: "vertical",
+        spaceBetween: 10,
+        // direction: "vertical",
         },
         1024: {
-        slidesPerView: 4.5,
-        spaceBetween: 20,
-        direction: "vertical",
+        slidesPerView: 3,
+        spaceBetween: 10,
+        // direction: "vertical",
         },
     },
 });
